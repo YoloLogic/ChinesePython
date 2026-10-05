@@ -14,10 +14,11 @@
 ## 快速开始
 ```python
 导入 操作系统 作为 操
+来自 并行.futures 导入 线程池执行器
 定义 平方(甲):
     返回 甲 * 甲
-使用 并行.futures.线程池执行器(2) 作为 池:
-    打印([任务.result() for 任务 in [池.submit(平方, 数字) for 数字 in range(4)]])
+使用 线程池执行器(2) 作为 池:
+    打印([任务.result() 对于 任务 属于 [池.submit(平方, 数字) 对于 数字 属于 range(4)]])
 ```
 装第三方包：`python -m pip install 包名`（第三方库本身仍是英文 API）。
 

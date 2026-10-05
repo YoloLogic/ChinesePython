@@ -395,8 +395,8 @@ globals().update({_英: globals()[_中]
                    if _中 in globals()})
 
 # __all__：英文原名一个都不能少（硬约束），中文名并排加在后面。
-__all__ = list(__all__) + [
+__all__ = type(__all__)(list(__all__) + [
     '校验器',
-]
+])
 
 # ---- 转发层结束 ----

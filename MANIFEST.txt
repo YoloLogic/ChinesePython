@@ -1,13 +1,13 @@
 ChinesePython 0.1.0 —— 发布仓文件清单
-文件数：1429
-总字节：53439561
+文件数：1446
+总字节：55329460
 
 .gitattributes  11
 .gitignore  23
 常见问题.md  3665
 启动.cmd  84
 一键安装.cmd  146
-用户手册.md  6812
+用户手册.md  6928
 中文对照表.md  97728
 bin\_asyncio.pyd  65536
 bin\_bz2.pyd  80896
@@ -149,6 +149,7 @@ Lib\电子邮件\消息.py  56529
 Lib\电子邮件\邮件头.py  27152
 Lib\电子邮件\邮件头登记.py  22475
 Lib\电子邮件\字符集.py  14916
+Lib\电子邮件\architecture.rst  9561
 Lib\电子邮件\base64编码.py  5088
 Lib\电子邮件\mime\__init__.py  1604
 Lib\电子邮件\mime\多部分.py  5990
@@ -224,6 +225,10 @@ Lib\内存追踪.py  27638
 Lib\配置解析.py  64330
 Lib\区域设置.py  45532
 Lib\全量编译.py  19115
+Lib\确保pip\__init__.py  7434
+Lib\确保pip\__main__.py  1251
+Lib\确保pip\_bundled\pip-26.2.1-py3-none-any.whl  1816632
+Lib\确保pip\_uninstall.py  1830
 Lib\日历.py  44266
 Lib\日期时间.py  1883
 Lib\日志\__init__.py  86821
@@ -268,6 +273,14 @@ Lib\消息认证.py  15675
 Lib\信号.py  4822
 Lib\信箱.py  90720
 Lib\行缓存.py  9002
+Lib\虚拟环境\__init__.py  35024
+Lib\虚拟环境\__main__.py  1292
+Lib\虚拟环境\scripts\common\activate  2186
+Lib\虚拟环境\scripts\common\activate.fish  2208
+Lib\虚拟环境\scripts\common\Activate.ps1  9031
+Lib\虚拟环境\scripts\nt\activate.bat  1104
+Lib\虚拟环境\scripts\nt\deactivate.bat  393
+Lib\虚拟环境\scripts\posix\activate.csh  978
 Lib\选项解析.py  9873
 Lib\选择器.py  27847
 Lib\压缩包\__init__.py  87863
@@ -350,7 +363,10 @@ Lib\C类型\_layout.py  8715
 Lib\C类型\macholib\__init__.py  1333
 Lib\C类型\macholib\dyld.py  5534
 Lib\C类型\macholib\dylib.py  2134
+Lib\C类型\macholib\fetch_macholib  84
+Lib\C类型\macholib\fetch_macholib.bat  75
 Lib\C类型\macholib\framework.py  2289
+Lib\C类型\macholib\README.ctypes  296
 Lib\C类型\util.py  15220
 Lib\C类型\wintypes.py  8936
 Lib\C剖析器.py  14035
@@ -1273,6 +1289,7 @@ Lib\TOML解析\__init__.py  1844
 Lib\TOML解析\_parser.py  23339
 Lib\TOML解析\_re.py  3782
 Lib\TOML解析\_types.py  1259
+Lib\TOML解析\mypy.ini  404
 Lib\tomllib\__init__.py  308
 Lib\tomllib\_parser.py  25086
 Lib\tomllib\_re.py  3192

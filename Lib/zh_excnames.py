@@ -17,7 +17,7 @@
 `CHINESEPYTHON_ERRORS=en` 时这张表不生效。
 """
 
-# 共 183 条
+# 共 184 条
 模块异常名 = {
     "FTP传输.Error":                                             "FTP传输.错误",
     "XML工具.dom.DOMException":                                  "XML工具.dom.DOM异常",
@@ -195,6 +195,7 @@
     "zlib.error":                                              "zlib.错误",
     "zoneinfo._common.ZoneInfoNotFoundError":                  "zoneinfo._common.时区未找到错误",
     "zoneinfo._tzpath.InvalidTZPathWarning":                   "zoneinfo._tzpath.非法时区路径警告",
+    "单元测试.mock.InvalidSpecError":                              "单元测试.mock.非法规格错误",
     "多进程.context.TimeoutError":                                "多进程.context.超时错误",
     "海龟绘图.TurtleGraphicsError":                                "海龟绘图.Turtle图形错误",
     "电子邮件._邮件头值解析._InvalidEwError":                            "电子邮件._邮件头值解析.非法编码字错误",

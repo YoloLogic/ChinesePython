@@ -1,14 +1,14 @@
 ChinesePython 0.1.0 —— 发布仓文件清单
-文件数：3578
-总字节：98368763
+文件数：3591
+总字节：98638277
 
 .gitattributes  11
 .gitignore  23
 常见问题.md  3940
 启动.cmd  84
 一键安装.cmd  146
-用户手册.md  7099
-中文对照表.md  97728
+用户手册.md  7385
+中文对照表.md  97912
 bin\_asyncio.pyd  65536
 bin\_bz2.pyd  80896
 bin\_ctypes_test.pyd  119296
@@ -429,6 +429,19 @@ Lib\纯Python输入输出.py  5289
 Lib\词法单元.py  5532
 Lib\词法切分.py  21154
 Lib\代码片段.py  7232
+Lib\单元测试\__init__.py  5564
+Lib\单元测试\__main__.py  1423
+Lib\单元测试\_log.py  3598
+Lib\单元测试\async_case.py  5132
+Lib\单元测试\case.py  74466
+Lib\单元测试\loader.py  19060
+Lib\单元测试\main.py  10738
+Lib\单元测试\mock.py  99233
+Lib\单元测试\result.py  13310
+Lib\单元测试\runner.py  12289
+Lib\单元测试\signals.py  3836
+Lib\单元测试\suite.py  13369
+Lib\单元测试\util.py  6915
 Lib\电子邮件\__init__.py  4498
 Lib\电子邮件\_编码词.py  7353
 Lib\电子邮件\_策略基类.py  24425
@@ -3559,7 +3572,7 @@ Lib\XMLRPC远程调用\客户端.py  41097
 Lib\zh_errmessages_gen.py  320557
 Lib\zh_errmessages_lib.py  244804
 Lib\zh_errmessages.py  79389
-Lib\zh_excnames.py  18063
+Lib\zh_excnames.py  18174
 Lib\zh_traceback.py  20066
 Lib\zipapp.py  8713
 Lib\zipfile\__init__.py  92940

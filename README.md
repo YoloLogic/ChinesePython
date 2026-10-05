@@ -30,7 +30,7 @@ powershell -ExecutionPolicy Bypass -File install.ps1 -卸载
 
 ## 已知限制
 * 报错**显示**是中文，但 `str(e)`、异常类名仍是英文（有意设计）；设环境变量 `CHINESEPYTHON_ERRORS=en` 可**完全还原**英文；
-* 少数库**只翻了一部分**，另有一批库未汉化（`asyncio` / `unittest` / `importlib` / `tkinter` …）—— 这些名字的英文版照旧可用；
+* 少数库**只翻了一部分**，另有一批库未汉化（`tkinter` …）—— 这些名字的英文版照旧可用；
 * **pickle 协议 <4** 写不了中文模块名，用协议 4/5（`pickle.HIGHEST_PROTOCOL`，即默认）；
 * 详细清单见 `用户手册.md`，安装/使用问题见 `常见问题.md`。
 

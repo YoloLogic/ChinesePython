@@ -1,13 +1,13 @@
 ChinesePython 0.1.0 —— 发布仓文件清单
-文件数：3591
-总字节：98640737
+文件数：3593
+总字节：98650051
 
 .gitattributes  11
 .gitignore  23
-常见问题.md  3940
+常见问题.md  4420
 启动.cmd  84
 一键安装.cmd  146
-用户手册.md  7385
+用户手册.md  8095
 中文对照表.md  97912
 bin\_asyncio.pyd  65536
 bin\_bz2.pyd  80896
@@ -442,6 +442,7 @@ Lib\单元测试\runner.py  12289
 Lib\单元测试\signals.py  3836
 Lib\单元测试\suite.py  13369
 Lib\单元测试\util.py  6915
+Lib\导入机制.py  2283
 Lib\电子邮件\__init__.py  4513
 Lib\电子邮件\_编码词.py  7368
 Lib\电子邮件\_策略基类.py  24440
@@ -604,6 +605,7 @@ Lib\压缩工具.py  30206
 Lib\压缩应用.py  8578
 Lib\腌制.py  57443
 Lib\颜色系统.py  5529
+Lib\异步IO.py  5880
 Lib\邮件发送.py  50528
 Lib\语法树.py  32489
 Lib\源码编译.py  16237
@@ -3591,5 +3593,5 @@ libs\python314.lib  402346
 LICENSE-MIT  1066
 LICENSE.txt  13804
 NOTICE.txt  756
-README.md  2663
+README.md  2624
 verify.ps1  1836

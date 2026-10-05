@@ -37,7 +37,9 @@ powershell -ExecutionPolicy Bypass -File install.ps1 -卸载
 ## 目录
 ```
 bin\        解释器、运行时 DLL/.pyd、pip
-Lib\        中文标准库
+Lib\        中文标准库（含 Lib\test 官方测试套）
+include\    C 头文件（编译 C 扩展用）
+libs\       导入库（同上）
 用户手册.md  关键字全表 / 已汉化库 / 未汉化库 / 切换英文报错 / 许可
 中文对照表.md 英文名 ⇄ 中文名总表
 常见问题.md  FAQ

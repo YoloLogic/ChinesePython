@@ -11,6 +11,10 @@
 
 不想改 PATH 也行：直接双击根目录 **`启动.cmd`**，或用 `bin\python.exe 你的脚本.py`。
 
+## 两个单文件 exe（在 Release 附件里另给，不在本仓内）
+* **`ChinesePython.exe`（便携解释器）**：`ChinesePython.exe 你的脚本.py` 直接用（`-c` / `-m` 也可以）；首次运行解包到 `%LOCALAPPDATA%\ChinesePython\`，之后走缓存；换了版本会**自动清掉旧缓存**。
+* **`ChinesePython-安装.exe`（自解压）**：双击即解包到 `%LOCALAPPDATA%\Programs\ChinesePython`，并跑一遍包内自检；**不擅自改 PATH、不写注册表**（想加 PATH 再双击包里的 `一键安装.cmd`）。
+
 ## 快速开始
 ```python
 导入 操作系统 作为 操
@@ -38,6 +42,7 @@ powershell -ExecutionPolicy Bypass -File install.ps1 -卸载
 ```
 bin\        解释器、运行时 DLL/.pyd、pip
 Lib\        中文标准库（含 Lib\test 官方测试套）
+Doc\html\   官方英文 HTML 文档（每页顶部加了中文横幅，另有 中文入口.html）
 include\    C 头文件（编译 C 扩展用）
 libs\       导入库（同上）
 用户手册.md  关键字全表 / 已汉化库 / 未汉化库 / 切换英文报错 / 许可

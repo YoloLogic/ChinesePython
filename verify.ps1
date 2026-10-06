@@ -1,4 +1,4 @@
-# 发行包自检（verify.ps1）：用**包内**解释器验六项 —— 中文标准库 / 中文关键字 / 中文报错显示层 / 英文还原开关 / pip / 官方英文文档副本
+# 发行包自检（verify.ps1）：用**包内**解释器验七项 —— 中文标准库 / 中文关键字 / 中文报错显示层 / 英文还原开关 / pip / 官方英文文档副本 / 一键安装脚本布局
 $ErrorActionPreference = 'Continue'
 $py = Join-Path $PSScriptRoot 'python.exe'
 if (-not (Test-Path $py)) { $py = Join-Path $PSScriptRoot 'bin\python.exe' }
@@ -35,6 +35,15 @@ Remove-Item Env:CHINESEPYTHON_ERRORS -ErrorAction SilentlyContinue
 $文档入口 = Join-Path $PSScriptRoot 'Doc\html\中文入口.html'
 if (Test-Path $文档入口) { Write-Host '  [OK] 官方英文文档副本（Doc\html，含中文入口页）' }
 else { Write-Host '  [!!] 官方英文文档副本缺失（Doc\html\中文入口.html）'; $坏++ }
+
+# 一键安装脚本指向的目录对不对（**不真改 PATH**：调 install.ps1 -检查，子进程跑）
+$装脚本 = Join-Path $PSScriptRoot 'install.ps1'
+if (Test-Path $装脚本) {
+    $壳 = if (Get-Command pwsh -ErrorAction SilentlyContinue) { 'pwsh' } else { 'powershell' }
+    $o = & $壳 -NoProfile -ExecutionPolicy Bypass -File $装脚本 -检查 2>&1 | Out-String
+    if ($LASTEXITCODE -eq 0) { Write-Host '  [OK] 一键安装脚本（目录与解释器对得上）' }
+    else { Write-Host ('  [!!] 一键安装脚本布局不对 ==> ' + $o.Trim()); $坏++ }
+} else { Write-Host '  [!!] 缺少 install.ps1'; $坏++ }
 
 if ($坏 -eq 0) { Write-Host '全部通过 OK' } else { Write-Host ($坏.ToString() + ' 项未通过') }
 exit $坏

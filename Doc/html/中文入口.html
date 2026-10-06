@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<title>中文入口 —— ChinesePython 文档</title>
+<style>body{font:15px/1.75 system-ui,'Microsoft YaHei',sans-serif;max-width:60em;margin:2em auto;padding:0 1.2em;color:#222}h1{font-size:1.7em}h2{margin-top:1.6em;border-bottom:1px solid #ddd;padding-bottom:.2em}table{border-collapse:collapse;width:100%}th,td{border:1px solid #ddd;padding:4px 8px;text-align:left}th{background:#f5f5f5}code{background:#f4f4f4;padding:1px 4px;border-radius:3px}.提示{background:#fff8e1;border:1px solid #e0c97f;padding:10px 14px;border-radius:6px}</style>
+</head><body>
+<h1>中文入口</h1>
+<div class="提示">这份文档是<b>官方 CPython 3.13.7 英文 HTML 文档</b>的副本
+（本机官方安装里那一份，逐文件一致）。本产品（ChinesePython）的解释器是 <b>3.14.7</b>：两版有差异的地方<b>以 3.14 为准</b>。</div>
+<p>官方正文里的代码例子是<b>英文语法</b>——本产品的中文关键字、中文库名、中文报错都在下面，英文原名与英文语法<b>照旧可用</b>。</p>
+<h2>一、中文关键字（硬 35 + 软 3）</h2>
+<p>中英两种拼写<b>完全等价</b>（同一个 token 号）。单字符符号（`_`）不译。</p>
+<table><tr><th>中文</th><th>英文</th><th>中文</th><th>英文</th></tr>
+<tr><td><code>产出</code></td><td><code>yield</code></td><td><code>作为</code></td><td><code>as</code></td></tr>
+<tr><td><code>使用</code></td><td><code>with</code></td><td><code>假值</code></td><td><code>False</code></td></tr>
+<tr><td><code>全局</code></td><td><code>global</code></td><td><code>删除</code></td><td><code>del</code></td></tr>
+<tr><td><code>匿名函数</code></td><td><code>lambda</code></td><td><code>否则</code></td><td><code>else</code></td></tr>
+<tr><td><code>否则如果</code></td><td><code>elif</code></td><td><code>如果</code></td><td><code>if</code></td></tr>
+<tr><td><code>定义</code></td><td><code>def</code></td><td><code>对于</code></td><td><code>for</code></td></tr>
+<tr><td><code>导入</code></td><td><code>import</code></td><td><code>尝试</code></td><td><code>try</code></td></tr>
+<tr><td><code>属于</code></td><td><code>in</code></td><td><code>并且</code></td><td><code>and</code></td></tr>
+<tr><td><code>并非</code></td><td><code>not</code></td><td><code>异步</code></td><td><code>async</code></td></tr>
+<tr><td><code>或者</code></td><td><code>or</code></td><td><code>抛出</code></td><td><code>raise</code></td></tr>
+<tr><td><code>捕获</code></td><td><code>except</code></td><td><code>断言</code></td><td><code>assert</code></td></tr>
+<tr><td><code>最终必须</code></td><td><code>finally</code></td><td><code>来自</code></td><td><code>from</code></td></tr>
+<tr><td><code>每当</code></td><td><code>while</code></td><td><code>略过</code></td><td><code>pass</code></td></tr>
+<tr><td><code>真值</code></td><td><code>True</code></td><td><code>空值</code></td><td><code>None</code></td></tr>
+<tr><td><code>等同</code></td><td><code>is</code></td><td><code>等待</code></td><td><code>await</code></td></tr>
+<tr><td><code>类型</code></td><td><code>class</code></td><td><code>跳出</code></td><td><code>break</code></td></tr>
+<tr><td><code>跳过</code></td><td><code>continue</code></td><td><code>返回</code></td><td><code>return</code></td></tr>
+<tr><td><code>非局部</code></td><td><code>nonlocal</code></td><td><code></code></td><td><code></code></td></tr>
+</table>
+<p>软关键字（可以当普通名字用）：<code>匹配</code>（match）、<code>情形</code>（case）、<code>类型别名</code>（type）</p>
+<h2>二、中文库名 → 官方文档页（141 个）</h2>
+<p>本产品里这些库可以按中文名导入（例如 <code>导入 操作系统 作为 操</code>）；点中文名右边的「英文文档」看官方说明。</p>
+<table><tr><th>中文名</th><th>英文名</th><th>文档</th></tr>
+<tr><td><code>BZ2压缩</code></td><td><code>bz2</code></td><td><a href="library/bz2.html">英文文档</a></td></tr>
+<tr><td><code>C类型</code></td><td><code>ctypes</code></td><td><a href="library/ctypes.html">英文文档</a></td></tr>
+<tr><td><code>FTP传输</code></td><td><code>ftplib</code></td><td><a href="library/ftplib.html">英文文档</a></td></tr>
+<tr><td><code>HTML工具</code></td><td><code>html</code></td><td><a href="library/html.html">英文文档</a></td></tr>
+<tr><td><code>HTTP协议</code></td><td><code>http</code></td><td><a href="library/http.html">英文文档</a></td></tr>
+<tr><td><code>IMAP客户端</code></td><td><code>imaplib</code></td><td><a href="library/imaplib.html">英文文档</a></td></tr>
+<tr><td><code>IP地址</code></td><td><code>ipaddress</code></td><td><a href="library/ipaddress.html">英文文档</a></td></tr>
+<tr><td><code>JSON解析</code></td><td><code>json</code></td><td><a href="library/json.html">英文文档</a></td></tr>
+<tr><td><code>LZMA压缩</code></td><td><code>lzma</code></td><td><a href="library/lzma.html">英文文档</a></td></tr>
+<tr><td><code>MIME类型</code></td><td><code>mimetypes</code></td><td><a href="library/mimetypes.html">英文文档</a></td></tr>
+<tr><td><code>NETRC配置</code></td><td><code>netrc</code></td><td><a href="library/netrc.html">英文文档</a></td></tr>
+<tr><td><code>POP收信</code></td><td><code>poplib</code></td><td><a href="library/poplib.html">英文文档</a></td></tr>
+<tr><td><code>QP编码</code></td><td><code>quopri</code></td><td><a href="library/quopri.html">英文文档</a></td></tr>
+<tr><td><code>SQLite数据库</code></td><td><code>sqlite3</code></td><td><a href="library/sqlite3.html">英文文档</a></td></tr>
+<tr><td><code>TAR压缩包</code></td><td><code>tarfile</code></td><td><a href="library/tarfile.html">英文文档</a></td></tr>
+<tr><td><code>TOML解析</code></td><td><code>tomllib</code></td><td><a href="library/tomllib.html">英文文档</a></td></tr>
+<tr><td><code>URL工具</code></td><td><code>urllib</code></td><td><a href="library/urllib.html">英文文档</a></td></tr>
+<tr><td><code>WAV音频</code></td><td><code>wave</code></td><td><a href="library/wave.html">英文文档</a></td></tr>
+<tr><td><code>WSGI参考</code></td><td><code>wsgiref</code></td><td><a href="library/wsgiref.html">英文文档</a></td></tr>
+<tr><td><code>XMLRPC远程调用</code></td><td><code>xmlrpc</code></td><td><a href="library/xmlrpc.html">英文文档</a></td></tr>
+<tr><td><code>XML工具</code></td><td><code>xml</code></td><td><a href="library/xml.html">英文文档</a></td></tr>
+<tr><td><code>ZLIB压缩</code></td><td><code>zlib</code></td><td><a href="library/zlib.html">英文文档</a></td></tr>
+<tr><td><code>pickle工具</code></td><td><code>pickletools</code></td><td><a href="library/pickletools.html">英文文档</a></td></tr>
+<tr><td><code>readline补全</code></td><td><code>rlcompleter</code></td><td><a href="library/rlcompleter.html">英文文档</a></td></tr>
+<tr><td><code>上下文</code></td><td><code>contextlib</code></td><td><a href="library/contextlib.html">英文文档</a></td></tr>
+<tr><td><code>上下文变量</code></td><td><code>contextvars</code></td><td><a href="library/contextvars.html">英文文档</a></td></tr>
+<tr><td><code>临时文件</code></td><td><code>tempfile</code></td><td><a href="library/tempfile.html">英文文档</a></td></tr>
+<tr><td><code>事件调度</code></td><td><code>sched</code></td><td><a href="library/sched.html">英文文档</a></td></tr>
+<tr><td><code>二分</code></td><td><code>bisect</code></td><td><a href="library/bisect.html">英文文档</a></td></tr>
+<tr><td><code>二进制转换</code></td><td><code>binascii</code></td><td><a href="library/binascii.html">英文文档</a></td></tr>
+<tr><td><code>交互式解释</code></td><td><code>code</code></td><td><a href="library/code.html">英文文档</a></td></tr>
+<tr><td><code>代码片段</code></td><td><code>codeop</code></td><td><a href="library/codeop.html">英文文档</a></td></tr>
+<tr><td><code>信号</code></td><td><code>signal</code></td><td><a href="library/signal.html">英文文档</a></td></tr>
+<tr><td><code>信箱</code></td><td><code>mailbox</code></td><td><a href="library/mailbox.html">英文文档</a></td></tr>
+<tr><td><code>全量编译</code></td><td><code>compileall</code></td><td><a href="library/compileall.html">英文文档</a></td></tr>
+<tr><td><code>关键字工具</code></td><td><code>keyword</code></td><td><a href="library/keyword.html">英文文档</a></td></tr>
+<tr><td><code>内存映射文件</code></td><td><code>mmap</code></td><td><a href="library/mmap.html">英文文档</a></td></tr>
+<tr><td><code>内存追踪</code></td><td><code>tracemalloc</code></td><td><a href="library/tracemalloc.html">英文文档</a></td></tr>
+<tr><td><code>函数工具</code></td><td><code>functools</code></td><td><a href="library/functools.html">英文文档</a></td></tr>
+<tr><td><code>分数</code></td><td><code>fractions</code></td><td><a href="library/fractions.html">英文文档</a></td></tr>
+<tr><td><code>分词器</code></td><td><code>tokenize</code></td><td><a href="library/tokenize.html">英文文档</a></td></tr>
+<tr><td><code>制表符检查</code></td><td><code>tabnanny</code></td><td><a href="library/tabnanny.html">英文文档</a></td></tr>
+<tr><td><code>包工具</code></td><td><code>pkgutil</code></td><td><a href="library/pkgutil.html">英文文档</a></td></tr>
+<tr><td><code>区域设置</code></td><td><code>locale</code></td><td><a href="library/locale.html">英文文档</a></td></tr>
+<tr><td><code>单元测试</code></td><td><code>unittest</code></td><td><a href="library/unittest.html">英文文档</a></td></tr>
+<tr><td><code>压缩包</code></td><td><code>zipfile</code></td><td><a href="library/zipfile.html">英文文档</a></td></tr>
+<tr><td><code>压缩包导入</code></td><td><code>zipimport</code></td><td><a href="library/zipimport.html">英文文档</a></td></tr>
+<tr><td><code>压缩工具</code></td><td><code>gzip</code></td><td><a href="library/gzip.html">英文文档</a></td></tr>
+<tr><td><code>压缩应用</code></td><td><code>zipapp</code></td><td><a href="library/zipapp.html">英文文档</a></td></tr>
+<tr><td><code>参数解析</code></td><td><code>argparse</code></td><td><a href="library/argparse.html">英文文档</a></td></tr>
+<tr><td><code>反汇编器</code></td><td><code>dis</code></td><td><a href="library/dis.html">英文文档</a></td></tr>
+<tr><td><code>口令输入</code></td><td><code>getpass</code></td><td><a href="library/getpass.html">英文文档</a></td></tr>
+<tr><td><code>命令行界面</code></td><td><code>cmd</code></td><td><a href="library/cmd.html">英文文档</a></td></tr>
+<tr><td><code>命令行选项</code></td><td><code>optparse</code></td><td><a href="library/optparse.html">英文文档</a></td></tr>
+<tr><td><code>哈希库</code></td><td><code>hashlib</code></td><td><a href="library/hashlib.html">英文文档</a></td></tr>
+<tr><td><code>唯一标识</code></td><td><code>uuid</code></td><td><a href="library/uuid.html">英文文档</a></td></tr>
+<tr><td><code>回溯</code></td><td><code>traceback</code></td><td><a href="library/traceback.html">英文文档</a></td></tr>
+<tr><td><code>国际化</code></td><td><code>gettext</code></td><td><a href="library/gettext.html">英文文档</a></td></tr>
+<tr><td><code>垃圾回收</code></td><td><code>gc</code></td><td><a href="library/gc.html">英文文档</a></td></tr>
+<tr><td><code>基64编码</code></td><td><code>base64</code></td><td><a href="library/base64.html">英文文档</a></td></tr>
+<tr><td><code>堆队列</code></td><td><code>heapq</code></td><td><a href="library/heapq.html">英文文档</a></td></tr>
+<tr><td><code>复制</code></td><td><code>copy</code></td><td><a href="library/copy.html">英文文档</a></td></tr>
+<tr><td><code>复数数学</code></td><td><code>cmath</code></td><td><a href="library/cmath.html">英文文档</a></td></tr>
+<tr><td><code>多线程</code></td><td><code>threading</code></td><td><a href="library/threading.html">英文文档</a></td></tr>
+<tr><td><code>多路复用</code></td><td><code>select</code></td><td><a href="library/select.html">英文文档</a></td></tr>
+<tr><td><code>多进程</code></td><td><code>multiprocessing</code></td><td><a href="library/multiprocessing.html">英文文档</a></td></tr>
+<tr><td><code>套接字</code></td><td><code>socket</code></td><td><a href="library/socket.html">英文文档</a></td></tr>
+<tr><td><code>套接字服务器</code></td><td><code>socketserver</code></td><td><a href="library/socketserver.html">英文文档</a></td></tr>
+<tr><td><code>子进程</code></td><td><code>subprocess</code></td><td><a href="library/subprocess.html">英文文档</a></td></tr>
+<tr><td><code>字符串准备</code></td><td><code>stringprep</code></td><td><a href="library/stringprep.html">英文文档</a></td></tr>
+<tr><td><code>字符串工具</code></td><td><code>string</code></td><td><a href="library/string.html">英文文档</a></td></tr>
+<tr><td><code>安全套接字</code></td><td><code>ssl</code></td><td><a href="library/ssl.html">英文文档</a></td></tr>
+<tr><td><code>安全随机</code></td><td><code>secrets</code></td><td><a href="library/secrets.html">英文文档</a></td></tr>
+<tr><td><code>容器库</code></td><td><code>collections</code></td><td><a href="library/collections.html">英文文档</a></td></tr>
+<tr><td><code>导入机制</code></td><td><code>importlib</code></td><td><a href="library/importlib.html">英文文档</a></td></tr>
+<tr><td><code>属性列表</code></td><td><code>plistlib</code></td><td><a href="library/plistlib.html">英文文档</a></td></tr>
+<tr><td><code>差异比较</code></td><td><code>difflib</code></td><td><a href="library/difflib.html">英文文档</a></td></tr>
+<tr><td><code>并行</code></td><td><code>concurrent</code></td><td><a href="library/concurrent.html">英文文档</a></td></tr>
+<tr><td><code>异步IO</code></td><td><code>asyncio</code></td><td><a href="library/asyncio.html">英文文档</a></td></tr>
+<tr><td><code>弱引用</code></td><td><code>weakref</code></td><td><a href="library/weakref.html">英文文档</a></td></tr>
+<tr><td><code>抽象基类</code></td><td><code>abc</code></td><td><a href="library/abc.html">英文文档</a></td></tr>
+<tr><td><code>拓扑排序</code></td><td><code>graphlib</code></td><td><a href="library/graphlib.html">英文文档</a></td></tr>
+<tr><td><code>持久字典</code></td><td><code>shelve</code></td><td><a href="library/shelve.html">英文文档</a></td></tr>
+<tr><td><code>操作系统</code></td><td><code>os</code></td><td><a href="library/os.html">英文文档</a></td></tr>
+<tr><td><code>数值类型</code></td><td><code>numbers</code></td><td><a href="library/numbers.html">英文文档</a></td></tr>
+<tr><td><code>数学</code></td><td><code>math</code></td><td><a href="library/math.html">英文文档</a></td></tr>
+<tr><td><code>数据类</code></td><td><code>dataclasses</code></td><td><a href="library/dataclasses.html">英文文档</a></td></tr>
+<tr><td><code>数组</code></td><td><code>array</code></td><td><a href="library/array.html">英文文档</a></td></tr>
+<tr><td><code>文件名匹配</code></td><td><code>fnmatch</code></td><td><a href="library/fnmatch.html">英文文档</a></td></tr>
+<tr><td><code>文件工具</code></td><td><code>shutil</code></td><td><a href="library/shutil.html">英文文档</a></td></tr>
+<tr><td><code>文件模式</code></td><td><code>stat</code></td><td><a href="library/stat.html">英文文档</a></td></tr>
+<tr><td><code>文件比较</code></td><td><code>filecmp</code></td><td><a href="library/filecmp.html">英文文档</a></td></tr>
+<tr><td><code>文件输入</code></td><td><code>fileinput</code></td><td><a href="library/fileinput.html">英文文档</a></td></tr>
+<tr><td><code>文本折行</code></td><td><code>textwrap</code></td><td><a href="library/textwrap.html">英文文档</a></td></tr>
+<tr><td><code>文档工具</code></td><td><code>pydoc</code></td><td><a href="library/pydoc.html">英文文档</a></td></tr>
+<tr><td><code>文档测试</code></td><td><code>doctest</code></td><td><a href="library/doctest.html">英文文档</a></td></tr>
+<tr><td><code>日历</code></td><td><code>calendar</code></td><td><a href="library/calendar.html">英文文档</a></td></tr>
+<tr><td><code>日志</code></td><td><code>logging</code></td><td><a href="library/logging.html">英文文档</a></td></tr>
+<tr><td><code>日期时间</code></td><td><code>datetime</code></td><td><a href="library/datetime.html">英文文档</a></td></tr>
+<tr><td><code>时间</code></td><td><code>time</code></td><td><a href="library/time.html">英文文档</a></td></tr>
+<tr><td><code>枚举</code></td><td><code>enum</code></td><td><a href="library/enum.html">英文文档</a></td></tr>
+<tr><td><code>模块查找器</code></td><td><code>modulefinder</code></td><td><a href="library/modulefinder.html">英文文档</a></td></tr>
+<tr><td><code>正则</code></td><td><code>re</code></td><td><a href="library/re.html">英文文档</a></td></tr>
+<tr><td><code>浏览器调用</code></td><td><code>webbrowser</code></td><td><a href="library/webbrowser.html">英文文档</a></td></tr>
+<tr><td><code>海龟绘图</code></td><td><code>turtle</code></td><td><a href="library/turtle.html">英文文档</a></td></tr>
+<tr><td><code>消息认证</code></td><td><code>hmac</code></td><td><a href="library/hmac.html">英文文档</a></td></tr>
+<tr><td><code>源码编译</code></td><td><code>py_compile</code></td><td><a href="library/py_compile.html">英文文档</a></td></tr>
+<tr><td><code>电子邮件</code></td><td><code>email</code></td><td><a href="library/email.html">英文文档</a></td></tr>
+<tr><td><code>确保pip</code></td><td><code>ensurepip</code></td><td><a href="library/ensurepip.html">英文文档</a></td></tr>
+<tr><td><code>符号表</code></td><td><code>symtable</code></td><td><a href="library/symtable.html">英文文档</a></td></tr>
+<tr><td><code>类型工具</code></td><td><code>types</code></td><td><a href="library/types.html">英文文档</a></td></tr>
+<tr><td><code>系统配置</code></td><td><code>sysconfig</code></td><td><a href="library/sysconfig.html">英文文档</a></td></tr>
+<tr><td><code>结构体</code></td><td><code>struct</code></td><td><a href="library/struct.html">英文文档</a></td></tr>
+<tr><td><code>统一码数据</code></td><td><code>unicodedata</code></td><td><a href="library/unicodedata.html">英文文档</a></td></tr>
+<tr><td><code>统计</code></td><td><code>statistics</code></td><td><a href="library/statistics.html">英文文档</a></td></tr>
+<tr><td><code>缩写表示</code></td><td><code>reprlib</code></td><td><a href="library/reprlib.html">英文文档</a></td></tr>
+<tr><td><code>美观打印</code></td><td><code>pprint</code></td><td><a href="library/pprint.html">英文文档</a></td></tr>
+<tr><td><code>腌制</code></td><td><code>pickle</code></td><td><a href="library/pickle.html">英文文档</a></td></tr>
+<tr><td><code>自省</code></td><td><code>inspect</code></td><td><a href="library/inspect.html">英文文档</a></td></tr>
+<tr><td><code>致命错误回溯</code></td><td><code>faulthandler</code></td><td><a href="library/faulthandler.html">英文文档</a></td></tr>
+<tr><td><code>虚拟环境</code></td><td><code>venv</code></td><td><a href="library/venv.html">英文文档</a></td></tr>
+<tr><td><code>行缓存</code></td><td><code>linecache</code></td><td><a href="library/linecache.html">英文文档</a></td></tr>
+<tr><td><code>计时工具</code></td><td><code>timeit</code></td><td><a href="library/timeit.html">英文文档</a></td></tr>
+<tr><td><code>词法切分</code></td><td><code>shlex</code></td><td><a href="library/shlex.html">英文文档</a></td></tr>
+<tr><td><code>词法单元</code></td><td><code>token</code></td><td><a href="library/token.html">英文文档</a></td></tr>
+<tr><td><code>语法树</code></td><td><code>ast</code></td><td><a href="library/ast.html">英文文档</a></td></tr>
+<tr><td><code>跟踪工具</code></td><td><code>trace</code></td><td><a href="library/trace.html">英文文档</a></td></tr>
+<tr><td><code>路径库</code></td><td><code>pathlib</code></td><td><a href="library/pathlib.html">英文文档</a></td></tr>
+<tr><td><code>输入输出</code></td><td><code>io</code></td><td><a href="library/io.html">英文文档</a></td></tr>
+<tr><td><code>运算符</code></td><td><code>operator</code></td><td><a href="library/operator.html">英文文档</a></td></tr>
+<tr><td><code>运行库</code></td><td><code>runpy</code></td><td><a href="library/runpy.html">英文文档</a></td></tr>
+<tr><td><code>迭代工具</code></td><td><code>itertools</code></td><td><a href="library/itertools.html">英文文档</a></td></tr>
+<tr><td><code>选择器</code></td><td><code>selectors</code></td><td><a href="library/selectors.html">英文文档</a></td></tr>
+<tr><td><code>选项解析</code></td><td><code>getopt</code></td><td><a href="library/getopt.html">英文文档</a></td></tr>
+<tr><td><code>逗号分隔</code></td><td><code>csv</code></td><td><a href="library/csv.html">英文文档</a></td></tr>
+<tr><td><code>通配文件</code></td><td><code>glob</code></td><td><a href="library/glob.html">英文文档</a></td></tr>
+<tr><td><code>邮件发送</code></td><td><code>smtplib</code></td><td><a href="library/smtplib.html">英文文档</a></td></tr>
+<tr><td><code>配置解析</code></td><td><code>configparser</code></td><td><a href="library/configparser.html">英文文档</a></td></tr>
+<tr><td><code>队列</code></td><td><code>queue</code></td><td><a href="library/queue.html">英文文档</a></td></tr>
+<tr><td><code>随机</code></td><td><code>random</code></td><td><a href="library/random.html">英文文档</a></td></tr>
+<tr><td><code>颜色系统</code></td><td><code>colorsys</code></td><td><a href="library/colorsys.html">英文文档</a></td></tr>
+</table>
+<h2>三、中文报错（显示层）</h2>
+<p>报错<b>显示</b>是中文（例：<code>除零错误: 除以零</code>），但 <code>str(e)</code>、<code>e.args</code>、异常类名仍是英文——这是有意设计，日志与 <code>捕获</code> 判断不受影响。</p>
+<p>要整体切回英文报错：设环境变量 <code>CHINESEPYTHON_ERRORS=en</code>（100%% 还原 CPython 原样）。</p>
+<h2>四、还有两处</h2>
+<ul><li><a href="../../用户手册.md">用户手册</a>：关键字全表 / 已汉化库 / 怎么切回英文报错 / 许可。</li>
+<li><a href="../../中文对照表.md">中文对照表</a>：英文名 ⇄ 中文名总表。</li><li><a href="../../常见问题.md">常见问题</a>。</li></ul>
+<p style="color:#888">这份文档由 <code>tools/汉化文档.py</code> 生成；官方正文一字未改（只加了每页的横幅与本页）。</p>
+</body></html>

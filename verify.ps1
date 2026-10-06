@@ -1,4 +1,4 @@
-# 发行包自检（verify.ps1）：用**包内**解释器验五项 —— 中文标准库 / 中文关键字 / 中文报错显示层 / 英文还原开关 / pip
+# 发行包自检（verify.ps1）：用**包内**解释器验六项 —— 中文标准库 / 中文关键字 / 中文报错显示层 / 英文还原开关 / pip / 官方英文文档副本
 $ErrorActionPreference = 'Continue'
 $py = Join-Path $PSScriptRoot 'python.exe'
 if (-not (Test-Path $py)) { $py = Join-Path $PSScriptRoot 'bin\python.exe' }
@@ -30,6 +30,11 @@ $env:CHINESEPYTHON_ERRORS = 'en'
 查报错 '英文还原（CHINESEPYTHON_ERRORS=en）' '1/0' 'ZeroDivisionError' '除零错误'
 Remove-Item Env:CHINESEPYTHON_ERRORS -ErrorAction SilentlyContinue
 查 'pip 开箱可用' 'import pip; print(pip.__version__)'
+
+# 官方英文 HTML 文档副本（D-185）：有中文入口页就算在（正文是官方英文原文）
+$文档入口 = Join-Path $PSScriptRoot 'Doc\html\中文入口.html'
+if (Test-Path $文档入口) { Write-Host '  [OK] 官方英文文档副本（Doc\html，含中文入口页）' }
+else { Write-Host '  [!!] 官方英文文档副本缺失（Doc\html\中文入口.html）'; $坏++ }
 
 if ($坏 -eq 0) { Write-Host '全部通过 OK' } else { Write-Host ($坏.ToString() + ' 项未通过') }
 exit $坏

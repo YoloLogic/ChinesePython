@@ -32,9 +32,14 @@ powershell -ExecutionPolicy Bypass -File verify.ps1
 powershell -ExecutionPolicy Bypass -File install.ps1 -卸载
 ```
 
+## VS Code 扩展（在 Release 附件里另给）
+* `chinesepython-0.1.0.vsix`：中文关键字**高亮**（注入式，不动内置 Python 语法）+ 38 条中文片段，覆盖 202 个名字。
+* 装：`code --install-extension chinesepython-0.1.0.vsix`（或扩展面板 → `...` → 从 VSIX 安装）。
+* ⚠ 若以后另装了官方 Python 扩展：Pylance 是 TypeScript 重实现、**永远不认识中文关键字**，中文行会被误标红（**不影响运行**）。届时见 `常见问题.md`。
+
 ## 签名与校验和
 * 两个单文件 exe 与包内 exe 都带**自签**数字签名（发布者 **YoloLogic**，带时间戳）——验「来源 + 没被改过」够用；
-* 但**自签**证书 Windows 默认不信任 ⇒ 首次运行仍会提示「未知发布者」（点「更多信息 → 仍要运行」）。想让本机显示为受信任，可把 `ChinesePython-签名.cer` 装进「受信任的根证书颁发机构 / 受信任的发布者」，**随你**；
+* 但**自签**证书 Windows 默认不信任 ⇒ 首次运行仍会提示「未知发布者」（点「更多信息 → 仍要运行」）。想让本机显示为受信任，可把 `ChinesePython-signing.cer` 装进「受信任的根证书颁发机构 / 受信任的发布者」，**随你**；
 * Release 说明里每个附件都有 **SHA-256**，下载后 `Get-FileHash <文件> -Algorithm SHA256` 对照一下再装；
 * 要真正去掉提示只能买受信任 CA 的证书（OV/EV）或走云签名 —— 我们没买。
 

@@ -32,6 +32,12 @@ powershell -ExecutionPolicy Bypass -File verify.ps1
 powershell -ExecutionPolicy Bypass -File install.ps1 -卸载
 ```
 
+## 签名与校验和
+* 两个单文件 exe 与包内 exe 都带**自签**数字签名（发布者 **YoloLogic**，带时间戳）——验「来源 + 没被改过」够用；
+* 但**自签**证书 Windows 默认不信任 ⇒ 首次运行仍会提示「未知发布者」（点「更多信息 → 仍要运行」）。想让本机显示为受信任，可把 `ChinesePython-签名.cer` 装进「受信任的根证书颁发机构 / 受信任的发布者」，**随你**；
+* Release 说明里每个附件都有 **SHA-256**，下载后 `Get-FileHash <文件> -Algorithm SHA256` 对照一下再装；
+* 要真正去掉提示只能买受信任 CA 的证书（OV/EV）或走云签名 —— 我们没买。
+
 ## 已知限制
 * 报错**显示**是中文，但 `str(e)`、异常类名仍是英文（有意设计）；设环境变量 `CHINESEPYTHON_ERRORS=en` 可**完全还原**英文；
 * 少数库**只翻了一部分**，另有一批库未汉化（`tkinter` …）—— 这些名字的英文版照旧可用；

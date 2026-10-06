@@ -1,10 +1,10 @@
 ChinesePython 0.1.0 —— 发布仓文件清单
 文件数：4197
-总字节：159543177
+总字节：159591262
 
 .gitattributes  11
 .gitignore  23
-常见问题.md  4759
+常见问题.md  6008
 启动.cmd  84
 一键安装.cmd  146
 用户手册.md  9237
@@ -44,14 +44,14 @@ bin\libcrypto-3.dll  6242552
 bin\libffi-8.dll  39696
 bin\libssl-3.dll  1329912
 bin\libtommath.dll  81408
-bin\py.exe  809984
+bin\py.exe  817672
 bin\pyexpat.pyd  215040
 bin\pyshellext.dll  39424
-bin\python.exe  91648
+bin\python.exe  99336
 bin\python3.dll  59392
 bin\python314.dll  7092224
-bin\pythonw.exe  90112
-bin\pyw.exe  807936
+bin\pythonw.exe  97800
+bin\pyw.exe  815624
 bin\select.pyd  18944
 bin\sqlite3.dll  1570816
 bin\tcl90.dll  3369299
@@ -59,8 +59,8 @@ bin\tcl9tk90.dll  2138360
 bin\unicodedata.pyd  743424
 bin\vcruntime140_1.dll  49792
 bin\vcruntime140.dll  124544
-bin\venvlauncher.exe  241152
-bin\venvwlauncher.exe  237568
+bin\venvlauncher.exe  248840
+bin\venvwlauncher.exe  245256
 bin\winsound.pyd  18944
 bin\zlib1.dll  102912
 Doc\html\_downloads\6dc1f3f4f0e6ca13cb42ddf4d6cbc8af\tzinfo_examples.py  6036
@@ -4197,5 +4197,5 @@ libs\python314.lib  402346
 LICENSE-MIT  1066
 LICENSE.txt  13804
 NOTICE.txt  756
-README.md  3283
+README.md  3991
 verify.ps1  2928

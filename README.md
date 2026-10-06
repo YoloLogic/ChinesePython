@@ -26,6 +26,8 @@
 ```
 装第三方包：`python -m pip install 包名`（第三方库本身仍是英文 API）。
 
+想知道「手里这份到底是哪一份」：`python --build-info` —— 会打出**全量改动文件的联合哈希**（唯一身份）、`python314.dll` 的 SHA-256（**当场实测**）、两仓 HEAD 与预装 pip 版本；**dll 被换过会当场显示不一致**。
+
 ## 自检 / 卸载
 ```powershell
 powershell -ExecutionPolicy Bypass -File verify.ps1

@@ -13,7 +13,7 @@
 
 ## 两个单文件 exe（在 Release 附件里另给，不在本仓内）
 * **`ChinesePython.exe`（便携解释器）**：`ChinesePython.exe 你的脚本.py` 直接用（`-c` / `-m` 也可以）；首次运行解包到 `%LOCALAPPDATA%\ChinesePython\`，之后走缓存；换了版本会**自动清掉旧缓存**。
-* **`ChinesePython-安装.exe`（自解压）**：双击即解包到 `%LOCALAPPDATA%\Programs\ChinesePython`，并跑一遍包内自检；**不擅自改 PATH、不写注册表**（想加 PATH 再双击包里的 `一键安装.cmd`）。
+* **`ChinesePython-install.exe`（自解压）**：双击即解包到 `%LOCALAPPDATA%\Programs\ChinesePython`，并跑一遍包内自检；**不擅自改 PATH、不写注册表**（想加 PATH 再双击包里的 `一键安装.cmd`）。
 
 ## 快速开始
 ```python

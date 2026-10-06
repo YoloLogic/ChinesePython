@@ -1,13 +1,13 @@
 ChinesePython 0.1.0 —— 发布仓文件清单
-文件数：4195
-总字节：159521222
+文件数：4197
+总字节：159541693
 
 .gitattributes  11
 .gitignore  23
-常见问题.md  4606
+常见问题.md  4759
 启动.cmd  84
 一键安装.cmd  146
-用户手册.md  8730
+用户手册.md  9237
 中文对照表.md  97912
 bin\_asyncio.pyd  65536
 bin\_bz2.pyd  80896
@@ -110,7 +110,7 @@ Doc\html\_static\sphinx_highlight.js  5123
 Doc\html\_static\themetoggle.js  779
 Doc\html\.buildinfo  235
 Doc\html\404.html  10052
-Doc\html\中文入口.html  22814
+Doc\html\中文入口.html  23072
 Doc\html\about.html  15232
 Doc\html\bugs.html  20324
 Doc\html\c-api\abstract.html  16893
@@ -466,7 +466,7 @@ Doc\html\library\pickle.html  169853
 Doc\html\library\pickletools.html  26814
 Doc\html\library\pipes.html  15448
 Doc\html\library\pkgutil.html  43625
-Doc\html\library\platform.html  61434
+Doc\html\library\platform.html  61512
 Doc\html\library\plistlib.html  37813
 Doc\html\library\poplib.html  45207
 Doc\html\library\posix.html  24810
@@ -550,7 +550,7 @@ Doc\html\library\tracemalloc.html  128620
 Doc\html\library\tty.html  22883
 Doc\html\library\turtle.html  305485
 Doc\html\library\types.html  75443
-Doc\html\library\typing.html  509337
+Doc\html\library\typing.html  509415
 Doc\html\library\unicodedata.html  31532
 Doc\html\library\unittest.html  329440
 Doc\html\library\unittest.mock-examples.html  192816
@@ -1124,6 +1124,7 @@ Lib\结构体.py  3081
 Lib\口令输入.py  9330
 Lib\垃圾回收.py  5178
 Lib\类型工具.py  11452
+Lib\类型注解.py  14255
 Lib\临时文件.py  29378
 Lib\浏览器调用.py  30055
 Lib\路径库\__init__.py  58051
@@ -1138,6 +1139,7 @@ Lib\模块查找器.py  22338
 Lib\内存映射文件.py  3154
 Lib\内存追踪.py  27638
 Lib\配置解析.py  64345
+Lib\平台信息.py  5141
 Lib\区域设置.py  45547
 Lib\全量编译.py  19130
 Lib\确保pip\__init__.py  7449
@@ -4195,5 +4197,5 @@ libs\python314.lib  402346
 LICENSE-MIT  1066
 LICENSE.txt  13804
 NOTICE.txt  756
-README.md  3282
+README.md  3283
 verify.ps1  2258

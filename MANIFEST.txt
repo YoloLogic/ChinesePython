@@ -1,13 +1,13 @@
-ChinesePython 0.1.0 —— 发布仓文件清单
-文件数：4199
-总字节：159599418
+ChinesePython 0.1.1 —— 发布仓文件清单
+文件数：4221
+总字节：159670706
 
 .gitattributes  11
 .gitignore  23
-常见问题.md  6315
+常见问题.md  6949
 启动.cmd  84
 一键安装.cmd  146
-用户手册.md  10458
+用户手册.md  12111
 中文对照表.md  97912
 bin\_asyncio.pyd  65536
 bin\_bz2.pyd  80896
@@ -656,6 +656,28 @@ Doc\html\whatsnew\3.8.html  314048
 Doc\html\whatsnew\3.9.html  221673
 Doc\html\whatsnew\changelog.html  5578637
 Doc\html\whatsnew\index.html  78503
+editors\一键还原.cmd  160
+editors\一键装配到我的VSCode.cmd  174
+editors\attach-to-vscode.ps1  4800
+editors\detach-from-vscode.ps1  1856
+editors\dist\chinesepython-0.1.1.vsix  9952
+editors\pycharm\ChinesePython.xml  11940
+editors\pycharm\README.md  982
+editors\README.md  3809
+editors\vscode-kit\中文示例.py  569
+editors\vscode-kit\launch.json  471
+editors\vscode-kit\README.md  817
+editors\vscode-kit\settings.json  567
+editors\vscode-kit\tasks.json  694
+editors\vscode\.vscodeignore  117
+editors\vscode\package.json  1637
+editors\vscode\README.md  1394
+editors\vscode\snippets\chinesepython.json  5395
+editors\vscode\src\bridge.js  3726
+editors\vscode\src\diagnose.py  1946
+editors\vscode\syntaxes\chinesepython.tmLanguage.json  14083
+editors\vsix\Content_Types.xml  360
+editors\vsix\extension.vsixmanifest.tmpl  1396
 include\abstract.h  32385
 include\audit.h  495
 include\bltinmodule.h  264
@@ -4175,8 +4197,8 @@ Lib\xmlrpc\server.py  36842
 Lib\XMLRPC远程调用\__init__.py  1400
 Lib\XMLRPC远程调用\服务端.py  34741
 Lib\XMLRPC远程调用\客户端.py  41097
-Lib\zh_buildinfo_data.py  1153
-Lib\zh_buildinfo.py  4163
+Lib\zh_buildinfo_data.py  1167
+Lib\zh_buildinfo.py  5756
 Lib\zh_errmessages_gen.py  320557
 Lib\zh_errmessages_lib.py  244804
 Lib\zh_errmessages.py  79389
@@ -4200,4 +4222,4 @@ LICENSE-MIT  1066
 LICENSE.txt  13804
 NOTICE.txt  756
 README.md  4791
-verify.ps1  2928
+verify.ps1  3477

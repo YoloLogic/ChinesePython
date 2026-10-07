@@ -1,0 +1,63 @@
+{
+  "name": "chinesepython",
+  "displayName": "ChinesePython 中文Python",
+  "description": "给 ChinesePython（用中文关键字写 Python）加高亮和代码片段：38 个中文关键字 + 202 个中文内置名/异常名。",
+  "version": "0.1.1",
+  "publisher": "YoloLogic",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YoloLogic/ChinesePython"
+  },
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "main": "./src/bridge.js",
+  "activationEvents": [
+    "onLanguage:python"
+  ],
+  "categories": [
+    "Programming Languages",
+    "Snippets",
+    "Linters"
+  ],
+  "keywords": [
+    "中文编程",
+    "汉语编程",
+    "中文Python",
+    "ChinesePython",
+    "chinese",
+    "python"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "scopeName": "chinesepython.injection",
+        "path": "./syntaxes/chinesepython.tmLanguage.json",
+        "injectTo": [
+          "source.python"
+        ]
+      }
+    ],
+    "snippets": [
+      {
+        "language": "python",
+        "path": "./snippets/chinesepython.json"
+      }
+    ],
+    "configuration": {
+      "title": "ChinesePython",
+      "properties": {
+        "chinesepython.interpreter": {
+          "type": "string",
+          "default": "python",
+          "markdownDescription": "跑诊断桥用的解释器。默认 `python`；指到 ChinesePython 的 `python.exe` 才能认中文关键字。"
+        },
+        "chinesepython.diagnostics": {
+          "type": "boolean",
+          "default": true,
+          "description": "用我们自己的解释器做语法诊断（关掉就只保留高亮与片段）。"
+        }
+      }
+    }
+  }
+}

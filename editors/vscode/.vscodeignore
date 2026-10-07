@@ -1,0 +1,4 @@
+# 打包成 .vsix 时要排除的（源码在仓库的 tools/ 里，包里不用带）
+.vscodeignore
+*.vsix
+**/*.map

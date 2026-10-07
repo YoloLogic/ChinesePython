@@ -32,14 +32,34 @@ def _文件哈希(路):
 
 
 def python_dll():
-    """返回 (路径, 实测哈希)；实测不到就是 None。"""
+    """返回 (路径, 实测哈希)；实测不到就是 None。
+
+    Windows：挨着 python.exe 的 python314.dll；
+    Linux/macOS：libpython3.14.so / .dylib —— **优先问 sysconfig**（别硬猜），
+    再退回构建树里常见的名字（构建树里它就跟 ./python 同级）。"""
     夹 = pathlib.Path(sys.executable).parent
-    名 = "python%d%d.dll" % sys.version_info[:2]
-    for 候选 in (名, "_" + 名):
-        路 = 夹 / 候选
-        if 路.is_file():
-            return str(路), _文件哈希(路)
-    return str(夹 / 名), None
+    候 = []
+    if sys.platform == "win32":
+        名 = "python%d%d.dll" % sys.version_info[:2]
+        候 = [夹 / 名, 夹 / ("_" + 名)]
+    else:
+        核 = "libpython%d.%d" % sys.version_info[:2]
+        # ⚠ 先找**构建树里**我们自己编出来的那份，再退 sysconfig：
+        #   Ubuntu 默认不编共享库 ⇒ 产物是 libpython3.14.a（静态库）；
+        #   而 sysconfig 可能指向系统里**另一份**安装的库（实测踩过，D-209）。
+        候 += [夹 / (核 + 扩) for 扩 in (".so", ".so.1.0", ".dylib", ".a")]
+        try:
+            import sysconfig
+            名 = sysconfig.get_config_var("INSTSONAME") or sysconfig.get_config_var("LDLIBRARY")
+            库夹 = sysconfig.get_config_var("LIBDIR")
+            if 名:
+                候.append((pathlib.Path(库夹) if 库夹 else 夹) / 名)
+        except Exception:
+            pass
+    路 = next((p for p in 候 if p.is_file()), None)
+    if 路 is None:
+        return str(候[0] if 候 else 夹), None
+    return str(路), _文件哈希(路)
 
 
 def 实装pip():
@@ -64,13 +84,18 @@ def 报告():
                 + "版本    : " + sys.version + chr(10)
                 + "提示    : 跑一次 tools/生成构建信息.py，或确认 Lib 里带着 zh_buildinfo_data.py")
     行 = []
-    行.append("ChinesePython 0.1.0 = CPython " + sys.version.split()[0] + " 的 fork；改动 "
+    行.append("ChinesePython " + str(数据.get("版本", "0.1.1")) + " = CPython " + sys.version.split()[0] + " 的 fork；改动 "
              + str(数据["改动数"]) + " 个文件（Lib/ " + str(数据["改动_Lib"]) + "）；身份 "
              + 数据["身份"][:16] + "…")
     行.append("版本    : " + sys.version)
     路, 实测 = python_dll()
+    同名 = (pathlib.Path(路).name == str(数据.get("python_dll_名", "")))
     if 实测 and 实测 == 数据["python_dll"]:
         判 = "一致"
+    elif 实测 and not 同名:
+        # 跨平台/跨构建（生成时那份是 Windows 的 python314.dll，本机是 libpython3.14.a 之类）
+        # ⇒ 根本不是同一个文件，**不该喊「不一致」**（D-212 修：以前在 Linux 上一直误报）。
+        判 = "跨平台/跨构建（生成时那份是 " + str(数据.get("python_dll_名", "?")) + "）⇒ 跳过比对"
     elif 实测:
         判 = "不一致（这个 dll 不是生成时那个！）"
     else:

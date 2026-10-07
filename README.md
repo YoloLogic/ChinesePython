@@ -35,8 +35,8 @@ powershell -ExecutionPolicy Bypass -File install.ps1 -卸载
 ```
 
 ## VS Code 扩展（在 Release 附件里另给）
-* `chinesepython-0.1.0.vsix`：中文关键字**高亮**（注入式，不动内置 Python 语法）+ 38 条中文片段，覆盖 202 个名字。
-* 装：`code --install-extension chinesepython-0.1.0.vsix`（或扩展面板 → `...` → 从 VSIX 安装）。
+* `chinesepython-0.1.1.vsix`：中文关键字**高亮**（注入式，不动内置 Python 语法）+ 38 条中文片段，覆盖 202 个名字。
+* 装：`code --install-extension chinesepython-0.1.1.vsix`（或扩展面板 → `...` → 从 VSIX 安装）。
 * ⚠ 若以后另装了官方 Python 扩展：Pylance 是 TypeScript 重实现、**永远不认识中文关键字**，中文行会被误标红（**不影响运行**）。届时见 `常见问题.md`。
 
 ## 签名与校验和

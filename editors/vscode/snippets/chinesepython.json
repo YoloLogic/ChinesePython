@@ -1,0 +1,286 @@
+{
+  "产出": {
+    "prefix": "产出",
+    "body": [
+      "产出 ${1:值}"
+    ],
+    "description": "产出（yield）"
+  },
+  "作为": {
+    "prefix": "作为",
+    "body": [
+      "作为 ${1:名字}"
+    ],
+    "description": "作为（as）"
+  },
+  "使用": {
+    "prefix": "使用",
+    "body": [
+      "使用 ${1:表达式} 作为 ${2:名字}:",
+      "\t$0"
+    ],
+    "description": "使用（with）"
+  },
+  "假值": {
+    "prefix": "假值",
+    "body": [
+      "假值"
+    ],
+    "description": "假值（False）"
+  },
+  "全局": {
+    "prefix": "全局",
+    "body": [
+      "全局 ${1:名字}"
+    ],
+    "description": "全局（global）"
+  },
+  "删除": {
+    "prefix": "删除",
+    "body": [
+      "删除 ${1:名字}"
+    ],
+    "description": "删除（del）"
+  },
+  "匹配": {
+    "prefix": "匹配",
+    "body": [
+      "匹配 ${1:值}:",
+      "\t情形 ${2:模式}:",
+      "\t\t$0"
+    ],
+    "description": "匹配（match）"
+  },
+  "匿名函数": {
+    "prefix": "匿名函数",
+    "body": [
+      "匿名函数 ${1:参数}: ${2:表达式}"
+    ],
+    "description": "匿名函数（lambda）"
+  },
+  "否则": {
+    "prefix": "否则",
+    "body": [
+      "否则:",
+      "\t$0"
+    ],
+    "description": "否则（else）"
+  },
+  "否则如果": {
+    "prefix": "否则如果",
+    "body": [
+      "否则如果 ${1:条件}:",
+      "\t$0"
+    ],
+    "description": "否则如果（elif）"
+  },
+  "如果": {
+    "prefix": "如果",
+    "body": [
+      "如果 ${1:条件}:",
+      "\t$0"
+    ],
+    "description": "如果（if）"
+  },
+  "定义": {
+    "prefix": "定义",
+    "body": [
+      "定义 ${1:函数名}(${2:参数}):",
+      "\t$0"
+    ],
+    "description": "定义（def）"
+  },
+  "对于": {
+    "prefix": "对于",
+    "body": [
+      "对于 ${1:元素} 属于 ${2:可迭代对象}:",
+      "\t$0"
+    ],
+    "description": "对于（for）"
+  },
+  "导入": {
+    "prefix": "导入",
+    "body": [
+      "导入 ${1:模块}"
+    ],
+    "description": "导入（import）"
+  },
+  "尝试": {
+    "prefix": "尝试",
+    "body": [
+      "尝试:",
+      "\t$0",
+      "捕获 ${1:异常} 作为 ${2:名字}:",
+      "\t$0"
+    ],
+    "description": "尝试（try）"
+  },
+  "属于": {
+    "prefix": "属于",
+    "body": [
+      "属于"
+    ],
+    "description": "属于（in）"
+  },
+  "并且": {
+    "prefix": "并且",
+    "body": [
+      "并且"
+    ],
+    "description": "并且（and）"
+  },
+  "并非": {
+    "prefix": "并非",
+    "body": [
+      "并非"
+    ],
+    "description": "并非（not）"
+  },
+  "异步": {
+    "prefix": "异步",
+    "body": [
+      "异步 定义 ${1:函数名}(${2:参数}):",
+      "\t$0"
+    ],
+    "description": "异步（async）"
+  },
+  "情形": {
+    "prefix": "情形",
+    "body": [
+      "情形 ${1:模式}:",
+      "\t$0"
+    ],
+    "description": "情形（case）"
+  },
+  "或者": {
+    "prefix": "或者",
+    "body": [
+      "或者"
+    ],
+    "description": "或者（or）"
+  },
+  "抛出": {
+    "prefix": "抛出",
+    "body": [
+      "抛出 ${1:异常}(${2:消息})"
+    ],
+    "description": "抛出（raise）"
+  },
+  "捕获": {
+    "prefix": "捕获",
+    "body": [
+      "捕获 ${1:异常} 作为 ${2:名字}:",
+      "\t$0"
+    ],
+    "description": "捕获（except）"
+  },
+  "断言": {
+    "prefix": "断言",
+    "body": [
+      "断言 ${1:条件}"
+    ],
+    "description": "断言（assert）"
+  },
+  "最终必须": {
+    "prefix": "最终必须",
+    "body": [
+      "最终必须:",
+      "\t$0"
+    ],
+    "description": "最终必须（finally）"
+  },
+  "来自": {
+    "prefix": "来自",
+    "body": [
+      "来自 ${1:模块} 导入 ${2:名字}"
+    ],
+    "description": "来自（from）"
+  },
+  "每当": {
+    "prefix": "每当",
+    "body": [
+      "每当 ${1:条件}:",
+      "\t$0"
+    ],
+    "description": "每当（while）"
+  },
+  "略过": {
+    "prefix": "略过",
+    "body": [
+      "略过"
+    ],
+    "description": "略过（pass）"
+  },
+  "真值": {
+    "prefix": "真值",
+    "body": [
+      "真值"
+    ],
+    "description": "真值（True）"
+  },
+  "空值": {
+    "prefix": "空值",
+    "body": [
+      "空值"
+    ],
+    "description": "空值（None）"
+  },
+  "等同": {
+    "prefix": "等同",
+    "body": [
+      "等同"
+    ],
+    "description": "等同（is）"
+  },
+  "等待": {
+    "prefix": "等待",
+    "body": [
+      "等待 ${1:表达式}"
+    ],
+    "description": "等待（await）"
+  },
+  "类型": {
+    "prefix": "类型",
+    "body": [
+      "类型 ${1:名字}(${2:基类}):",
+      "\t定义 初始化(自身${3:, 参数}):",
+      "\t\t$0"
+    ],
+    "description": "类型（class）"
+  },
+  "类型别名": {
+    "prefix": "类型别名",
+    "body": [
+      "类型别名 ${1:名字} = ${2:类型}"
+    ],
+    "description": "类型别名（type）"
+  },
+  "跳出": {
+    "prefix": "跳出",
+    "body": [
+      "跳出"
+    ],
+    "description": "跳出（break）"
+  },
+  "跳过": {
+    "prefix": "跳过",
+    "body": [
+      "跳过"
+    ],
+    "description": "跳过（continue）"
+  },
+  "返回": {
+    "prefix": "返回",
+    "body": [
+      "返回 ${1:值}"
+    ],
+    "description": "返回（return）"
+  },
+  "非局部": {
+    "prefix": "非局部",
+    "body": [
+      "非局部 ${1:名字}"
+    ],
+    "description": "非局部（nonlocal）"
+  }
+}

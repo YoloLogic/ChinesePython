@@ -1,0 +1,22 @@
+{
+  "// 说明": "由 editors/attach-to-vscode.ps1 抄进工作区。跑当前文件用的是 ChinesePython 解释器。",
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "ChinesePython：跑当前文件",
+      "type": "shell",
+      "command": "__CHINESEPYTHON_PYTHON__",
+      "args": ["${file}"],
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "shared" }
+    },
+    {
+      "label": "ChinesePython：自检（verify.ps1）",
+      "type": "shell",
+      "command": "pwsh",
+      "args": ["-NoProfile", "-File", "${workspaceFolder}/verify.ps1"],
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "shared" }
+    }
+  ]
+}

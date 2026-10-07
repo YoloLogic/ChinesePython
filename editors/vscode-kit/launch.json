@@ -1,0 +1,15 @@
+{
+  "// 说明": "由 editors/attach-to-vscode.ps1 抄进工作区。需要官方的 ms-python 扩展（它提供 debugpy）；没装也不影响高亮与诊断桥。",
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "ChinesePython：调试当前文件",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "python": "__CHINESEPYTHON_PYTHON__",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    }
+  ]
+}

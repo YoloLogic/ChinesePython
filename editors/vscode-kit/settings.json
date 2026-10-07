@@ -1,0 +1,8 @@
+{
+  "// 说明": "由 editors/attach-to-vscode.ps1 抄进工作区的 .vscode/settings.json（占位符会被替换成解释器路径）。",
+  "python.defaultInterpreterPath": "__CHINESEPYTHON_PYTHON__",
+  "chinesepython.interpreter": "__CHINESEPYTHON_PYTHON__",
+  "files.encoding": "utf8",
+  "// Pylance": "故意不预置任何「关掉 Pylance」的设置 —— 目标机上通常没装官方 Python 扩展，预先关一个不存在的扩展，用户看不懂为什么。以后若装了它，中文行会误报，见 常见问题.md。",
+  "editor.tabSize": 4
+}

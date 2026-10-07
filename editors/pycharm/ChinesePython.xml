@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 由 tools/生成编辑器扩展.py 自动生成，不要手改。
+     导入：PyCharm -> 设置 -> 编辑器 -> 实时模板 -> 右上角「导入」。
+     PyCharm 的 Python 关键字表是**编在插件里的**，改不了，
+     所以那边只能给代码片段，给不了高亮（见 editors/pycharm/README.md）。 -->
+
+<templateSet group="ChinesePython">
+  <template name="假值" value="假值" description="假值（False）" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="空值" value="空值" description="空值（None）" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="真值" value="真值" description="真值（True）" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="并且" value="并且" description="并且（and）" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="作为" value="作为 $名字$" description="作为（as）" toReformat="true" toShortenFQNames="true">
+    <variable name="名字" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="断言" value="断言 $条件$" description="断言（assert）" toReformat="true" toShortenFQNames="true">
+    <variable name="条件" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="异步" value="异步 定义 $函数名$($参数$):&#10;	$END$" description="异步（async）" toReformat="true" toShortenFQNames="true">
+    <variable name="函数名" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="参数" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="等待" value="等待 $表达式$" description="等待（await）" toReformat="true" toShortenFQNames="true">
+    <variable name="表达式" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="跳出" value="跳出" description="跳出（break）" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="情形" value="情形 $模式$:&#10;	$END$" description="情形（case）" toReformat="true" toShortenFQNames="true">
+    <variable name="模式" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="类型" value="类型 $名字$($基类$):&#10;	定义 初始化(自身$, 参数$):&#10;		$END$" description="类型（class）" toReformat="true" toShortenFQNames="true">
+    <variable name="名字" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="基类" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name=", 参数" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="跳过" value="跳过" description="跳过（continue）" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="定义" value="定义 $函数名$($参数$):&#10;	$END$" description="定义（def）" toReformat="true" toShortenFQNames="true">
+    <variable name="函数名" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="参数" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="删除" value="删除 $名字$" description="删除（del）" toReformat="true" toShortenFQNames="true">
+    <variable name="名字" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="否则如果" value="否则如果 $条件$:&#10;	$END$" description="否则如果（elif）" toReformat="true" toShortenFQNames="true">
+    <variable name="条件" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="否则" value="否则:&#10;	$END$" description="否则（else）" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="捕获" value="捕获 $异常$ 作为 $名字$:&#10;	$END$" description="捕获（except）" toReformat="true" toShortenFQNames="true">
+    <variable name="异常" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="名字" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="最终必须" value="最终必须:&#10;	$END$" description="最终必须（finally）" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="对于" value="对于 $元素$ 属于 $可迭代对象$:&#10;	$END$" description="对于（for）" toReformat="true" toShortenFQNames="true">
+    <variable name="元素" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="可迭代对象" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="来自" value="来自 $模块$ 导入 $名字$" description="来自（from）" toReformat="true" toShortenFQNames="true">
+    <variable name="模块" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="名字" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="全局" value="全局 $名字$" description="全局（global）" toReformat="true" toShortenFQNames="true">
+    <variable name="名字" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="如果" value="如果 $条件$:&#10;	$END$" description="如果（if）" toReformat="true" toShortenFQNames="true">
+    <variable name="条件" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="导入" value="导入 $模块$" description="导入（import）" toReformat="true" toShortenFQNames="true">
+    <variable name="模块" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="属于" value="属于" description="属于（in）" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="等同" value="等同" description="等同（is）" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="匿名函数" value="匿名函数 $参数$: $表达式$" description="匿名函数（lambda）" toReformat="true" toShortenFQNames="true">
+    <variable name="参数" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="表达式" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="匹配" value="匹配 $值$:&#10;	情形 $模式$:&#10;		$END$" description="匹配（match）" toReformat="true" toShortenFQNames="true">
+    <variable name="值" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="模式" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="非局部" value="非局部 $名字$" description="非局部（nonlocal）" toReformat="true" toShortenFQNames="true">
+    <variable name="名字" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="并非" value="并非" description="并非（not）" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="或者" value="或者" description="或者（or）" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="略过" value="略过" description="略过（pass）" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="抛出" value="抛出 $异常$($消息$)" description="抛出（raise）" toReformat="true" toShortenFQNames="true">
+    <variable name="异常" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="消息" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="返回" value="返回 $值$" description="返回（return）" toReformat="true" toShortenFQNames="true">
+    <variable name="值" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="尝试" value="尝试:&#10;	$END$&#10;捕获 $异常$ 作为 $名字$:&#10;	$END$" description="尝试（try）" toReformat="true" toShortenFQNames="true">
+    <variable name="异常" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="名字" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="类型别名" value="类型别名 $名字$ = $类型$" description="类型别名（type）" toReformat="true" toShortenFQNames="true">
+    <variable name="名字" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="类型" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="每当" value="每当 $条件$:&#10;	$END$" description="每当（while）" toReformat="true" toShortenFQNames="true">
+    <variable name="条件" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="使用" value="使用 $表达式$ 作为 $名字$:&#10;	$END$" description="使用（with）" toReformat="true" toShortenFQNames="true">
+    <variable name="表达式" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="名字" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="产出" value="产出 $值$" description="产出（yield）" toReformat="true" toShortenFQNames="true">
+    <variable name="值" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+</templateSet>

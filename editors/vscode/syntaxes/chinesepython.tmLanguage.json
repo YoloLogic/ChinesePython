@@ -1,0 +1,70 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "ChinesePython 中文名字",
+  "scopeName": "chinesepython.injection",
+  "injectionSelector": "L:source.python -comment -string",
+  "patterns": [
+    {
+      "name": "constant.language.chinesepython",
+      "match": "(?:(?<![\\w\\u4e00-\\u9fff])假值(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])真值(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])空值(?![\\w\\u4e00-\\u9fff]))"
+    },
+    {
+      "name": "keyword.control.flow.chinesepython",
+      "match": "(?:(?<![\\w\\u4e00-\\u9fff])否则如果(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])最终必须(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])产出(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])使用(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])删除(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])匹配(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])否则(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])如果(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])对于(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])尝试(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])情形(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])抛出(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])捕获(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])断言(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])每当(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])略过(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])等待(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])跳出(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])跳过(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])返回(?![\\w\\u4e00-\\u9fff]))"
+    },
+    {
+      "name": "keyword.control.import.chinesepython",
+      "match": "(?:(?<![\\w\\u4e00-\\u9fff])作为(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])导入(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])来自(?![\\w\\u4e00-\\u9fff]))"
+    },
+    {
+      "name": "keyword.operator.logical.chinesepython",
+      "match": "(?:(?<![\\w\\u4e00-\\u9fff])属于(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])并且(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])并非(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])或者(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])等同(?![\\w\\u4e00-\\u9fff]))"
+    },
+    {
+      "name": "storage.modifier.async.chinesepython",
+      "match": "(?:(?<![\\w\\u4e00-\\u9fff])异步(?![\\w\\u4e00-\\u9fff]))"
+    },
+    {
+      "name": "storage.modifier.global.chinesepython",
+      "match": "(?:(?<![\\w\\u4e00-\\u9fff])非局部(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])全局(?![\\w\\u4e00-\\u9fff]))"
+    },
+    {
+      "name": "storage.type.chinesepython",
+      "match": "(?:(?<![\\w\\u4e00-\\u9fff])类型别名(?![\\w\\u4e00-\\u9fff]))"
+    },
+    {
+      "name": "storage.type.class.chinesepython",
+      "match": "(?:(?<![\\w\\u4e00-\\u9fff])类型(?![\\w\\u4e00-\\u9fff]))"
+    },
+    {
+      "name": "storage.type.function.chinesepython",
+      "match": "(?:(?<![\\w\\u4e00-\\u9fff])定义(?![\\w\\u4e00-\\u9fff]))"
+    },
+    {
+      "name": "storage.type.function.lambda.chinesepython",
+      "match": "(?:(?<![\\w\\u4e00-\\u9fff])匿名函数(?![\\w\\u4e00-\\u9fff]))"
+    },
+    {
+      "name": "support.class.builtin.chinesepython",
+      "match": "(?:(?<![\\w\\u4e00-\\u9fff])内存视图(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])冻结集合(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])字节数组(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])静态方法(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])取类型(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])字符串(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])字节串(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])浮点数(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])类方法(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])元组(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])切片(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])列表(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])反转(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])复数(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])字典(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])对象(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])布尔(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])整数(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])映射(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])特性(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])筛选(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])编号(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])范围(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])超类(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])配对(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])集合(?![\\w\\u4e00-\\u9fff]))"
+    },
+    {
+      "name": "support.class.exception.chinesepython",
+      "match": "(?:(?<![\\w\\u4e00-\\u9fff])Unicode编码错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])Unicode解码错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])Unicode转换错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])Python收尾错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])Unicode警告(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])Unicode错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])Windows错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])_不完整输入错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])系统调用中断错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])文件已存在错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])文件未找到错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])未绑定局部错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])模块未找到错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])统一码编码错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])统一码解码错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])统一码转换错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])解释器收尾错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])进程不存在错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])不是目录错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])停止异步迭代(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])操作系统错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])文件结束错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])管道破裂错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])输入输出错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])连接中止错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])连接拒绝错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])连接重置错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])阻塞IO错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])EOF错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])制表符错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])子进程错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])待弃用警告(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])是目录错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])未实现错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])生成器退出(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])统一码警告(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])统一码错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])缓冲区错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])被中断错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])运行时警告(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])运行时错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])IO错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])OS错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])停止迭代(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])内存错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])名字错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])基异常组(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])字节警告(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])导入警告(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])导入错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])属性错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])弃用警告(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])引用错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])数值错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])断言错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])未来警告(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])权限错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])查找错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])浮点错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])溢出错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])环境错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])用户警告(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])算术错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])类型错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])系统退出(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])系统错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])索引错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])编码警告(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])缩进错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])视窗错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])语法警告(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])语法错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])资源警告(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])超时错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])连接错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])递归错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])键盘中断(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])阻塞错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])除零错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])值错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])基异常(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])异常组(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])键错误(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])异常(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])警告(?![\\w\\u4e00-\\u9fff]))"
+    },
+    {
+      "name": "support.function.builtin.chinesepython",
+      "match": "(?:(?<![\\w\\u4e00-\\u9fff])__构建类__(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])__导入__(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])__调试__(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])异步下一个(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])异步迭代器(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])任一为真(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])十六进制(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])四舍五入(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])等同子类(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])等同实例(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])转义表示(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])下一个(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])二进制(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])全为真(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])全局表(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])八进制(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])删属性(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])取字符(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])取属性(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])取码点(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])变量表(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])可调用(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])局部表(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])散列值(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])有属性(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])未实现(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])格式化(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])省略号(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])绝对值(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])设属性(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])身份号(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])迭代器(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])乘方(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])列出(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])商余(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])打印(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])打开(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])排序(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])断点(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])最大(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])最小(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])求值(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])求和(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])编译(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])表示(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])输入(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])运行(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])长度(?![\\w\\u4e00-\\u9fff]))"
+    },
+    {
+      "name": "support.variable.magic.chinesepython",
+      "match": "(?:(?<![\\w\\u4e00-\\u9fff])__加载器__(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])__名字__(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])__文档__(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])__规格__(?![\\w\\u4e00-\\u9fff])|(?<![\\w\\u4e00-\\u9fff])__包__(?![\\w\\u4e00-\\u9fff]))"
+    }
+  ],
+  "_comment": [
+    "本文件由 tools/生成编辑器扩展.py 自动生成，不要手改。",
+    "名字全部来自 Tools/peg_generator/pegen/zh_keywords.py / Python/bltinmodule.c /",
+    "Objects/exceptions.c / Objects/moduleobject.c —— 跟解释器同一个来源。",
+    "跑 tools/校验编辑器扩展.py 可以查出它有没有跟解释器脱节。"
+  ]
+}

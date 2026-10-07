@@ -1,4 +1,4 @@
-# 发行包自检（verify.ps1）：用**包内**解释器验七项 —— 中文标准库 / 中文关键字 / 中文报错显示层 / 英文还原开关 / pip / 官方英文文档副本 / 一键安装脚本布局
+# 发行包自检（verify.ps1）：用**包内**解释器验八项 —— 中文标准库 / 中文关键字 / 中文报错显示层 / 英文还原开关 / pip / 官方英文文档副本 / 一键安装脚本布局 / VS Code 一键装配 kit（D-212）
 $ErrorActionPreference = 'Continue'
 $py = Join-Path $PSScriptRoot 'python.exe'
 if (-not (Test-Path $py)) { $py = Join-Path $PSScriptRoot 'bin\python.exe' }
@@ -44,6 +44,12 @@ if (Test-Path $装脚本) {
     if ($LASTEXITCODE -eq 0) { Write-Host '  [OK] 一键安装脚本（目录与解释器对得上）' }
     else { Write-Host ('  [!!] 一键安装脚本布局不对 ==> ' + $o.Trim()); $坏++ }
 } else { Write-Host '  [!!] 缺少 install.ps1'; $坏++ }
+
+# VS Code 一键装配 kit（D-212）：包内 editors\ 要在（kit 三份配置 + 示例 + 扩展源码 + VSIX）
+$kit = Join-Path $PSScriptRoot 'editors\vscode-kit\settings.json'
+$vsix = Get-ChildItem (Join-Path $PSScriptRoot 'editors\dist') -Filter *.vsix -ErrorAction SilentlyContinue
+if ((Test-Path $kit) -and $vsix) { Write-Host '  [OK] VS Code 一键装配 kit（editors\vscode-kit + VSIX）' }
+else { Write-Host '  [!!] 缺少 editors\vscode-kit\settings.json 或 editors\dist\*.vsix'; $坏++ }
 
 if ($坏 -eq 0) { Write-Host '全部通过 OK' } else { Write-Host ($坏.ToString() + ' 项未通过') }
 exit $坏

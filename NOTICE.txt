@@ -1,4 +1,4 @@
-ChinesePython 0.1.0 —— NOTICE
+ChinesePython 0.1.1 —— NOTICE
 ============================
 
 本发行版是 **CPython 3.14.7** 的一个 fork（中文关键字 + 中文标准库 API + 中文报错显示层）。

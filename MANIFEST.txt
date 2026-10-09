@@ -1,13 +1,13 @@
 ChinesePython 0.1.1 —— 发布仓文件清单
-文件数：4221
-总字节：159670706
+文件数：4284
+总字节：162327289
 
 .gitattributes  11
 .gitignore  23
-常见问题.md  6949
+常见问题.md  7478
 启动.cmd  84
 一键安装.cmd  146
-用户手册.md  12111
+用户手册.md  12832
 中文对照表.md  97912
 bin\_asyncio.pyd  65536
 bin\_bz2.pyd  80896
@@ -973,6 +973,41 @@ Lib\__phello__\__init__.py  97
 Lib\__phello__\ham\__init__.py  0
 Lib\__phello__\ham\eggs.py  0
 Lib\__phello__\spam.py  97
+Lib\__pycache__\__future__.cpython-314.pyc  4840
+Lib\__pycache__\_colorize.cpython-314.pyc  18581
+Lib\__pycache__\_opcode_metadata.cpython-314.pyc  10462
+Lib\__pycache__\_py_warnings.cpython-314.pyc  37048
+Lib\__pycache__\_weakrefset.cpython-314.pyc  9461
+Lib\__pycache__\操作系统.cpython-314.pyc  56713
+Lib\__pycache__\annotationlib.cpython-314.pyc  49722
+Lib\__pycache__\ast.cpython-314.pyc  31674
+Lib\__pycache__\codeop.cpython-314.pyc  7024
+Lib\__pycache__\contextlib.cpython-314.pyc  31232
+Lib\__pycache__\copy.cpython-314.pyc  10174
+Lib\__pycache__\copyreg.cpython-314.pyc  7978
+Lib\__pycache__\dataclasses.cpython-314.pyc  54952
+Lib\__pycache__\dis.cpython-314.pyc  54290
+Lib\__pycache__\enum.cpython-314.pyc  88118
+Lib\__pycache__\functools.cpython-314.pyc  48062
+Lib\__pycache__\inspect.cpython-314.pyc  139843
+Lib\__pycache__\keyword.cpython-314.pyc  2669
+Lib\__pycache__\linecache.cpython-314.pyc  9560
+Lib\__pycache__\opcode.cpython-314.pyc  4550
+Lib\__pycache__\operator.cpython-314.pyc  19064
+Lib\__pycache__\reprlib.cpython-314.pyc  11742
+Lib\__pycache__\textwrap.cpython-314.pyc  18498
+Lib\__pycache__\threading.cpython-314.pyc  66568
+Lib\__pycache__\token.cpython-314.pyc  3936
+Lib\__pycache__\tokenize.cpython-314.pyc  27006
+Lib\__pycache__\traceback.cpython-314.pyc  81900
+Lib\__pycache__\types.cpython-314.pyc  15905
+Lib\__pycache__\warnings.cpython-314.pyc  2556
+Lib\__pycache__\weakref.cpython-314.pyc  27691
+Lib\__pycache__\zh_errmessages_gen.cpython-314.pyc  370502
+Lib\__pycache__\zh_errmessages_lib.cpython-314.pyc  284158
+Lib\__pycache__\zh_errmessages.cpython-314.pyc  76765
+Lib\__pycache__\zh_excnames.cpython-314.pyc  16065
+Lib\__pycache__\zh_traceback.cpython-314.pyc  21761
 Lib\_aix_support.py  4021
 Lib\_android_support.py  7417
 Lib\_apple_support.py  2256
@@ -1025,7 +1060,10 @@ Lib\安全套接字.py  53550
 Lib\包工具.py  16722
 Lib\标记基类.py  18596
 Lib\并行\__init__.py  1165
+Lib\并行\__pycache__\__init__.cpython-314.pyc  728
 Lib\并行\futures\__init__.py  4229
+Lib\并行\futures\__pycache__\__init__.cpython-314.pyc  3740
+Lib\并行\futures\__pycache__\_base.cpython-314.pyc  38448
 Lib\并行\futures\_base.py  26132
 Lib\并行\futures\interpreter.py  5707
 Lib\并行\futures\process.py  31945
@@ -1316,6 +1354,7 @@ Lib\code.py  13443
 Lib\codecs.py  36840
 Lib\codeop.py  5902
 Lib\collections\__init__.py  53021
+Lib\collections\__pycache__\__init__.cpython-314.pyc  74939
 Lib\colorsys.py  4062
 Lib\compileall.py  20691
 Lib\compression\__init__.py  0
@@ -1328,7 +1367,10 @@ Lib\compression\zlib.py  64
 Lib\compression\zstd\__init__.py  8769
 Lib\compression\zstd\_zstdfile.py  12325
 Lib\concurrent\__init__.py  38
+Lib\concurrent\__pycache__\__init__.cpython-314.pyc  201
 Lib\concurrent\futures\__init__.py  1863
+Lib\concurrent\futures\__pycache__\__init__.cpython-314.pyc  1660
+Lib\concurrent\futures\__pycache__\_base.cpython-314.pyc  34685
 Lib\concurrent\futures\_base.py  24198
 Lib\concurrent\futures\interpreter.py  4024
 Lib\concurrent\futures\process.py  43901
@@ -1403,6 +1445,11 @@ Lib\email\policy.py  10695
 Lib\email\quoprimime.py  9866
 Lib\email\utils.py  16443
 Lib\encodings\__init__.py  5945
+Lib\encodings\__pycache__\__init__.cpython-314.pyc  6800
+Lib\encodings\__pycache__\_win_cp_codecs.cpython-314.pyc  3375
+Lib\encodings\__pycache__\aliases.cpython-314.pyc  13029
+Lib\encodings\__pycache__\utf_8_sig.cpython-314.pyc  7262
+Lib\encodings\__pycache__\utf_8.cpython-314.pyc  2392
 Lib\encodings\_win_cp_codecs.py  1229
 Lib\encodings\aliases.py  16255
 Lib\encodings\ascii.py  1248
@@ -1725,6 +1772,7 @@ Lib\idlelib\zzdummy.py  2005
 Lib\IMAP客户端.py  72409
 Lib\imaplib.py  72151
 Lib\importlib\__init__.py  4767
+Lib\importlib\__pycache__\__init__.cpython-314.pyc  4677
 Lib\importlib\_abc.py  1354
 Lib\importlib\_bootstrap_external.py  57685
 Lib\importlib\_bootstrap.py  57937
@@ -1769,6 +1817,7 @@ Lib\keyword.py  1734
 Lib\linecache.py  8044
 Lib\locale.py  87190
 Lib\logging\__init__.py  84068
+Lib\logging\__pycache__\__init__.cpython-314.pyc  96916
 Lib\logging\config.py  43630
 Lib\logging\handlers.py  62944
 Lib\lzma.py  13426
@@ -1841,6 +1890,11 @@ Lib\queue.py  13455
 Lib\quopri.py  7159
 Lib\random.py  37553
 Lib\re\__init__.py  17876
+Lib\re\__pycache__\__init__.cpython-314.pyc  20027
+Lib\re\__pycache__\_casefix.cpython-314.pyc  1868
+Lib\re\__pycache__\_compiler.cpython-314.pyc  29725
+Lib\re\__pycache__\_constants.cpython-314.pyc  5687
+Lib\re\__pycache__\_parser.cpython-314.pyc  45315
 Lib\re\_casefix.py  5444
 Lib\re\_compiler.py  26855
 Lib\re\_constants.py  6036
@@ -1887,6 +1941,7 @@ Lib\site-packages\pip-26.2.1.dist-info\WHEEL  82
 Lib\site-packages\pip\__init__.py  355
 Lib\site-packages\pip\__main__.py  874
 Lib\site-packages\pip\__pip-runner__.py  1451
+Lib\site-packages\pip\__pycache__\__init__.cpython-314.pyc  830
 Lib\site-packages\pip\_internal\__init__.py  511
 Lib\site-packages\pip\_internal\build_env\__init__.py  788
 Lib\site-packages\pip\_internal\build_env\base.py  3440
@@ -2354,6 +2409,7 @@ Lib\ssl.py  52715
 Lib\stat.py  6308
 Lib\statistics.py  62246
 Lib\string\__init__.py  12807
+Lib\string\__pycache__\__init__.cpython-314.pyc  13030
 Lib\string\templatelib.py  956
 Lib\stringprep.py  12917
 Lib\struct.py  285
@@ -4042,6 +4098,8 @@ Lib\threading.py  56923
 Lib\timeit.py  13436
 Lib\tkinter\__init__.py  191588
 Lib\tkinter\__main__.py  148
+Lib\tkinter\__pycache__\__init__.cpython-314.pyc  263948
+Lib\tkinter\__pycache__\constants.cpython-314.pyc  1989
 Lib\tkinter\colorchooser.py  2718
 Lib\tkinter\commondialog.py  1334
 Lib\tkinter\constants.py  1493
@@ -4218,8 +4276,13 @@ Lib\zoneinfo\_zoneinfo.py  25053
 libs\_tkinter.lib  1750
 libs\python3.lib  198184
 libs\python314.lib  402346
-LICENSE-MIT  1066
+LICENSE  7695
+LICENSE-第三方.txt  60039
+LICENSE-SCOPE.md  5827
+LICENSE-TCL-TK.txt  4866
 LICENSE.txt  13804
-NOTICE.txt  756
-README.md  4791
-verify.ps1  3477
+MANIFEST.txt  176699
+NOTICE.txt  5610
+README.md  5961
+TRADEMARK.md  1653
+verify.ps1  4732

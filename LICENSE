@@ -1,0 +1,120 @@
+ChinesePython —— 许可条款（自定义：源码公开，禁止再发布）
+==========================================================
+
+适用版本：自 2026-10-09 起发布的版本
+著作权人：ChinesePython 项目作者
+联系方式：QQ 1396257961（书面许可、再发布授权等，请通过此联系方式）
+
+【一句话】可以用、可以改、可以用它写程序卖钱；但**不许**把本发行包（或改过的版本）
+重新打包、改名、上架或随产品分发。原封不动地、**非营利**地整体转发给别人，可以。
+
+一、你被允许做的
+----------------
+
+  1. 阅读、学习、研究本项目的源码与文档。
+  2. 在**不对外发布**的前提下修改本项目（自己用、公司内部用、做实验都行）。
+  3. 用本项目开发、运行、发布、销售**你自己的程序** —— 无论个人还是公司，
+     无论开源还是闭源，无论免费还是收费。
+     **用本项目运行、打包出来的程序，其版权与许可完全归写它的人；本许可不对
+     这些产出附加任何条件（不「传染」）。**
+  4. 把**未经任何修改**的官方发行包**整体**转发给他人，限于**非营利**目的
+     （教学、社团、朋友之间、非营利镜像），并满足第四节的四个条件。
+
+二、你不被允许做的（除事先取得作者书面许可外）
+----------------------------------------------
+
+  1. **重新打包再发布**：把本项目（原版或修改版）打包、改名、换标、上架应用商店、
+     放进你自己的发行版 / 镜像站 / 收费网盘。
+  2. **随产品分发**：把本项目与你的硬件、软件产品或服务捆绑分发，
+     或作为付费服务的一部分提供。
+  3. **发布修改版**：把你改过的版本对外提供（自用不受限，见第一节第 2 条）。
+  4. **拆分取用**：只取本发行包的一部分（例如只取中文关键字表、中文标准库副本、
+     中文报错显示层、一键安装脚本、编辑器扩展）用于你自己的发行物。
+  5. **去掉声明**：删除或替换本包内的 `LICENSE`、`LICENSE-SCOPE.md`、`TRADEMARK.md`、
+     `NOTICE.txt`、上游许可正文与作者署名。
+  6. 用 `ChinesePython` 的名称与图标发布任何衍生版本（详见 `TRADEMARK.md`）。
+
+三、例外：上游与第三方部件（**本许可管不着，也不打算管**）
+----------------------------------------------------------
+
+  * 本项目是 **CPython 3.14.7** 的一个 fork。派生自 CPython 的部分（解释器源码的改动、
+    `python.exe` / `python314.dll` / 内置扩展 `*.pyd` 等）仍按 **PSF License Agreement**
+    分发（正文见 `LICENSE.txt`，**与上游逐字节相同**，未作任何修改）。
+  * 发行包内随附的第三方组件 —— **Tcl/Tk 9.0.4**（BSD 式许可）、**OpenSSL 3**
+    （`libcrypto-3.dll` / `libssl-3.dll`，Apache-2.0）、**libffi**、**LibTomMath**、
+    **SQLite**（公有领域）、**zlib**、**pip**（MIT），以及微软**可再分发**的运行时库
+    （`vcruntime140.dll` / `vcruntime140_1.dll`）—— 各按其自身许可。
+  * ⇒ **本许可不改变、也不对这些部分附加任何限制。** 谁从本包拿到这些部件，就按那些
+    许可享有权利（包括再分发）。逐项判定规则见 `LICENSE-SCOPE.md`，逐条披露见 `NOTICE.txt`。
+  * 也就是说：「禁止再发布」约束的是**本项目原创的那一部分**。把 CPython 本体
+    （上游那部分）单独拿走是**合法**的 —— 但那就不是 ChinesePython 了。
+
+四、非营利原样转发的四个条件（对应第一节第 4 条）
+--------------------------------------------------
+
+  a. **一个字节都不改**（包括本许可与 NOTICE 等全部文件）；
+  b. 不得收取任何费用（合理的介质或带宽成本除外），不得附带广告、推广或付费墙；
+  c. 不得暗示这是你的产品、或你获得了作者的背书；
+  d. 在显著位置保留官方来源链接（https://github.com/YoloLogic/ChinesePython ）。
+
+五、性质声明（请如实理解）
+--------------------------
+
+  这是一种 **source-available（源码公开可见）** 的许可，**不是 OSI 认可的开源许可**：
+  OSI 的开源定义要求允许再分发，而本许可明确禁止再发布（唯一的例外是非营利原样转发）。
+  我们如实这么写，不混淆这两个概念。
+
+六、作者保留的权利
+------------------
+
+  * 作者**可以随时把后续版本改为更宽松的许可**（例如换成某个 OSI 认可的开源许可）；
+    已经发布的旧版本，仍按其随附的那一份许可。必要时会在此文件中公布新的适用日期。
+  * 作者保留本项目的名称、图标与署名权（见 `TRADEMARK.md`）。
+
+七、无担保与责任限制
+--------------------
+
+  本项目按「现状」提供，不附带任何明示或默示的担保（包括但不限于适销性、
+  特定用途适用性与不侵权）。因使用本项目及其脚本、发行包造成的任何后果 ——
+  包括但不限于系统或数据损坏、软件冲突、程序缺陷、项目延期、商业损失 ——
+  作者不承担责任。包内 CPython / Tcl-Tk / OpenSSL / 微软 / 其他第三方部分，
+  各自许可中的免责与责任限制条款同样适用。
+
+八、终止
+--------
+
+  违反本许可任何条款，你依据本许可获得的授权**自动终止**；作者可另行书面授权。
+  授权终止后，你仍须遵守第三节中第三方许可的要求。
+
+九、与历史版本的关系
+--------------------
+
+  * 自 **2026-10-09** 起发布的版本，本项目原创部分适用本条款；本文件自当前版本起
+    取代此前的 `LICENSE-MIT`。
+  * 在此之前发布的 **v0.1.1 及更早**的发行包，是按当时随附的 **MIT 许可**发布的；
+    已经取得那些副本的人，其权利仍按当时的 MIT 许可（**已经发出的授权无法撤回**）。
+
+十、English summary（不是上面中文条款的替代，仅供理解）
+-------------------------------------------------------
+
+  You may read, study and modify this project for your own (including internal commercial)
+  use, and you may use it to build, ship and sell **your own** programs -- your programs are
+  entirely yours and this license adds no conditions to them.
+  You may pass on an **unmodified** official package **for non-commercial purposes** only.
+  You may **not** repackage, rebrand, redistribute, publish modified versions, bundle it with
+  a product, or reuse parts of it in your own distribution without prior written permission.
+  Parts derived from CPython (PSF License) and the bundled third-party components (Tcl/Tk,
+  OpenSSL, libffi, LibTomMath, SQLite, zlib, pip, Microsoft's redistributable runtime) remain
+  under their own licenses (see LICENSE.txt, NOTICE.txt and LICENSE-SCOPE.md) and are **not**
+  restricted by this license. This is a **source-available** license, not an OSI-approved
+  open-source license. Provided "as is", without warranty of any kind.
+
+---
+
+⚠ 通俗版（不是条款本身，仅供理解）：
+
+  ✅ 自己用、公司内部用、拿它写程序卖钱 —— 随便；你写出来的程序**完全归你**。
+  ✅ 原封不动、不赚钱地转发给同学 / 社团 —— 可以（四个条件见第四节）。
+  ❌ 重新打包发布 / 改名上架 / 捆进你的产品 / 发布你的修改版 —— 不行，得先问作者。
+  ℹ️ 包里的 CPython、Tcl/Tk、OpenSSL 等上游与第三方部件各按各的许可 ——
+     我们没有、也不会给它们加限制。

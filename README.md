@@ -34,6 +34,17 @@ powershell -ExecutionPolicy Bypass -File verify.ps1
 powershell -ExecutionPolicy Bypass -File install.ps1 -卸载
 ```
 
+## 许可与再分发
+* ✅ **能用它写程序卖钱**：用它开发、运行、发布、销售**你自己的程序** —— 个人或公司、开源或闭源都行；**产出完全归使用者**，许可不附加任何条件；
+* ❌ **不许重新打包发布**：不得把本发行包（或修改版）重新打包、改名换标、上架、随产品/硬件捆绑，或当付费服务提供（除事先取得作者书面许可）；
+* ✅ **非营利、原封不动地整体转发可以**（教学 / 社团 / 非营利镜像；四个条件：一个字节不改 / 不收费不带广告 / 不暗示是自己的 / 保留官方来源链接）；
+* ❌ **名字不能用**：不得用 `ChinesePython` 的名称与图标发布衍生版本（即使尚未注册商标，这条作为许可条款同样有效）。
+
+正文见本仓 `LICENSE`，范围判定见 `LICENSE-SCOPE.md`，名称条款见 `TRADEMARK.md`，第三方披露见 `NOTICE.txt`。
+本仓派生自 **CPython 3.14.7** 的部分按 **PSF 许可**（`LICENSE.txt`，逐字节未改）。
+
+> ⚠ GitHub 的 **Assets 区块默认可能是折叠的** —— 看不到附件时点一下「Assets」。
+
 ## VS Code 扩展（在 Release 附件里另给）
 * `chinesepython-0.1.1.vsix`：中文关键字**高亮**（注入式，不动内置 Python 语法）+ 38 条中文片段，覆盖 202 个名字。
 * 装：`code --install-extension chinesepython-0.1.1.vsix`（或扩展面板 → `...` → 从 VSIX 安装）。

@@ -31,7 +31,7 @@
   中文 API 走的是并列的中文副本）
 
 这些**不是**本项目的版权：它们派生自 CPython，按 **PSF License Agreement** 分发
-（正文见同目录 `LICENSE.txt`，**与上游 `Python/LICENSE` 逐字节相同**）。
+（正文见同目录 `LICENSE-PSF.txt`，**与上游 `Python/LICENSE` 逐字节相同**）。
 
 ⇒ **你从本发行包拿到的这些部分，仍然享有 PSF 许可给你的全部权利**（可再分发、可商用）。
 `LICENSE` 里那条「禁止再发布」**只约束本项目原创部分，不改变、也无权改变**这一部分的权利。
@@ -50,7 +50,7 @@
 | `vcruntime140.dll`、`vcruntime140_1.dll` | Visual C++ 运行时库（app-local）| 微软**可再分发**运行库，按其再分发条款随包附带 |
 
 各第三方许可**正文**：`LICENSE-第三方.txt`（= 上游 `Doc/license.rst` 的逐字节副本，含 OpenSSL /
-expat / libffi / zlib / LibTomMath / SQLite 等）+ `LICENSE.txt`（PSF）+ 包内
+expat / libffi / zlib / LibTomMath / SQLite 等）+ `LICENSE-PSF.txt`（PSF）+ 包内
 `Doc/html/license.html`（同一份许可汇编的官方 HTML 版）。逐文件来源与 SHA-256 见包内 `MANIFEST.txt`。
 
 ## 四、怎么判定（机器可查的规则）

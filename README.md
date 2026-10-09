@@ -41,7 +41,7 @@ powershell -ExecutionPolicy Bypass -File install.ps1 -卸载
 * ❌ **名字不能用**：不得用 `ChinesePython` 的名称与图标发布衍生版本（即使尚未注册商标，这条作为许可条款同样有效）。
 
 正文见本仓 `LICENSE`，范围判定见 `LICENSE-SCOPE.md`，名称条款见 `TRADEMARK.md`，第三方披露见 `NOTICE.txt`。
-本仓派生自 **CPython 3.14.7** 的部分按 **PSF 许可**（`LICENSE.txt`，逐字节未改）。
+本仓派生自 **CPython 3.14.7** 的部分按 **PSF 许可**（`LICENSE-PSF.txt`，逐字节未改）。
 
 > ⚠ GitHub 的 **Assets 区块默认可能是折叠的** —— 看不到附件时点一下「Assets」。
 
@@ -76,4 +76,4 @@ verify.ps1  自检 · install.ps1 安装/卸载 · 启动.cmd 一键进 REPL
 ```
 
 ## 许可与来源
-基于 **CPython 3.14.7** fork（完整保留上游 PSF 许可，见 `LICENSE.txt`；上游 https://github.com/python/cpython ）。本项目自身代码/文档以 **MIT** 发布（见 `LICENSE-MIT`）。
+基于 **CPython 3.14.7** fork（完整保留上游 PSF 许可，见 `LICENSE-PSF.txt`；上游 https://github.com/python/cpython ）。本项目自身代码/文档以 **MIT** 发布（见 `LICENSE-MIT`）。

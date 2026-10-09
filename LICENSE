@@ -39,7 +39,7 @@ ChinesePython —— 许可条款（自定义：源码公开，禁止再发布�
 
   * 本项目是 **CPython 3.14.7** 的一个 fork。派生自 CPython 的部分（解释器源码的改动、
     `python.exe` / `python314.dll` / 内置扩展 `*.pyd` 等）仍按 **PSF License Agreement**
-    分发（正文见 `LICENSE.txt`，**与上游逐字节相同**，未作任何修改）。
+    分发（正文见 `LICENSE-PSF.txt`，**与上游逐字节相同**，未作任何修改）。
   * 发行包内随附的第三方组件 —— **Tcl/Tk 9.0.4**（BSD 式许可）、**OpenSSL 3**
     （`libcrypto-3.dll` / `libssl-3.dll`，Apache-2.0）、**libffi**、**LibTomMath**、
     **SQLite**（公有领域）、**zlib**、**pip**（MIT），以及微软**可再分发**的运行时库
@@ -105,7 +105,7 @@ ChinesePython —— 许可条款（自定义：源码公开，禁止再发布�
   a product, or reuse parts of it in your own distribution without prior written permission.
   Parts derived from CPython (PSF License) and the bundled third-party components (Tcl/Tk,
   OpenSSL, libffi, LibTomMath, SQLite, zlib, pip, Microsoft's redistributable runtime) remain
-  under their own licenses (see LICENSE.txt, NOTICE.txt and LICENSE-SCOPE.md) and are **not**
+  under their own licenses (see LICENSE-PSF.txt, NOTICE.txt and LICENSE-SCOPE.md) and are **not**
   restricted by this license. This is a **source-available** license, not an OSI-approved
   open-source license. Provided "as is", without warranty of any kind.
 

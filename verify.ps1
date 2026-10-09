@@ -1,6 +1,6 @@
 # 发行包自检（verify.ps1）：用**包内**解释器验 **17 项** —— 中文标准库 / 中文关键字 / 中文报错显示层 /
 # 英文还原开关 / pip / 图形界面运行时（Tcl/Tk 9）/ 官方英文文档副本 / 一键安装脚本布局 / VS Code 一键装配 kit /
-# **七份许可与披露文件**（LICENSE / LICENSE.txt / NOTICE.txt / LICENSE-SCOPE.md / TRADEMARK.md /
+# **七份许可与披露文件**（LICENSE / LICENSE-PSF.txt / NOTICE.txt / LICENSE-SCOPE.md / TRADEMARK.md /
 # LICENSE-第三方.txt / LICENSE-TCL-TK.txt）。D-212、D-220、D-223
 # 自检项数：17   ← 这个数字必须与下面真正的检查点个数、以及 发布说明-v0.1.md 里写的数字一致
 #             （由 tests\许可条款冒烟.py 的「数字对拍」守住；改这里就要改那里）
@@ -63,7 +63,7 @@ Remove-Item Env:CHINESEPYTHON_ERRORS -ErrorAction SilentlyContinue
 
 # 许可与披露（D-223）：**逐份点名**，少一份就红 —— 这些是发行包里必须随附的文件
 查文件 '许可：LICENSE（本项目自定义条款，禁止再发布）' 'LICENSE'
-查文件 '上游许可：LICENSE.txt（PSF，逐字节未改）' 'LICENSE.txt'
+查文件 '上游许可：LICENSE-PSF.txt（PSF，逐字节未改）' 'LICENSE-PSF.txt'
 查文件 '第三方披露：NOTICE.txt' 'NOTICE.txt'
 查文件 '许可范围说明：LICENSE-SCOPE.md' 'LICENSE-SCOPE.md'
 查文件 '名称与图标条款：TRADEMARK.md' 'TRADEMARK.md'

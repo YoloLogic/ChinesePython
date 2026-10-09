@@ -1,13 +1,13 @@
 ChinesePython 0.1.1 —— 发布仓文件清单
 文件数：4284
-总字节：162327289
+总字节：162330392
 
 .gitattributes  11
 .gitignore  23
-常见问题.md  7478
+常见问题.md  7401
 启动.cmd  84
 一键安装.cmd  146
-用户手册.md  12832
+用户手册.md  12836
 中文对照表.md  97912
 bin\_asyncio.pyd  65536
 bin\_bz2.pyd  80896
@@ -4276,13 +4276,13 @@ Lib\zoneinfo\_zoneinfo.py  25053
 libs\_tkinter.lib  1750
 libs\python3.lib  198184
 libs\python314.lib  402346
-LICENSE  7695
+LICENSE  7703
 LICENSE-第三方.txt  60039
-LICENSE-SCOPE.md  5827
+LICENSE-PSF.txt  13804
+LICENSE-SCOPE.md  5835
 LICENSE-TCL-TK.txt  4866
-LICENSE.txt  13804
-MANIFEST.txt  176699
-NOTICE.txt  5610
-README.md  5961
-TRADEMARK.md  1653
-verify.ps1  4732
+MANIFEST.txt  179897
+NOTICE.txt  5626
+README.md  5891
+TRADEMARK.md  1657
+verify.ps1  4744

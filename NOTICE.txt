@@ -46,8 +46,8 @@ ChinesePython 0.1.x —— 发行说明与第三方声明（NOTICE）
 -------------------------------------------
 
 本发行包内派生自 CPython 的全部内容采用 **PSF License Agreement**。
-许可证正文完整附在本目录的 **LICENSE.txt**（与上游 Python\LICENSE **逐字节相同**，未作修改）。
-**请连同 LICENSE.txt 一起分发。**
+许可证正文完整附在本目录的 **LICENSE-PSF.txt**（与上游 Python\LICENSE **逐字节相同**，未作修改）。
+**请连同 LICENSE-PSF.txt 一起分发。**
 
 ⚠ **重要**：你从本包拿到的这些部分，仍然享有 PSF 许可给你的全部权利（可再分发、可商用）。
 本项目自定义许可中那条「禁止再发布」**只约束本项目原创部分，不改变、也无权改变**这一部分的权利。
@@ -71,7 +71,7 @@ ChinesePython 0.1.x —— 发行说明与第三方声明（NOTICE）
   * LICENSE-第三方.txt —— 上游 Doc/license.rst 的**逐字节副本**（含 OpenSSL / expat / libffi /
     zlib / LibTomMath / SQLite 等；官方 HTML 版在包内 Doc\html\license.html）
   * LICENSE-TCL-TK.txt —— Tcl/Tk 的两份 license.terms 原文
-  * LICENSE.txt —— PSF License Agreement
+  * LICENSE-PSF.txt —— PSF License Agreement
 
 **本许可（LICENSE）不改变、也不对这些第三方与上游部件附加任何限制。**
 
@@ -90,5 +90,5 @@ ChinesePython 0.1.x —— 发行说明与第三方声明（NOTICE）
 
 开发仓里 tests\许可条款冒烟.py 会核对本文件是否含以上必备声明、许可正文是否正确，
 并自带「这些检查必须真的会失败」的自测。发行包内 verify.ps1 会**逐份点名检查**
-LICENSE / LICENSE.txt / NOTICE.txt / LICENSE-SCOPE.md / TRADEMARK.md /
+LICENSE / LICENSE-PSF.txt / NOTICE.txt / LICENSE-SCOPE.md / TRADEMARK.md /
 LICENSE-第三方.txt / LICENSE-TCL-TK.txt 是否在包里。

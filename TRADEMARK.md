@@ -19,7 +19,7 @@
 * 把本项目（**或修改版**）**改名换标**后当作你自己的产品或发行版发布；
 * 用 `ChinesePython`（或本项目的图标）命名你的衍生解释器、发行版、网站、商品或服务，
   使人误以为与我们有关联、或获得我们的背书；
-* 去掉或替换本发行包里的 `LICENSE`、`LICENSE.txt`、`LICENSE-第三方.txt`、`LICENSE-TCL-TK.txt`、
+* 去掉或替换本发行包里的 `LICENSE`、`LICENSE-PSF.txt`、`LICENSE-第三方.txt`、`LICENSE-TCL-TK.txt`、
   `NOTICE.txt`、`LICENSE-SCOPE.md`、本文件与作者署名后分发。
 
 ## 想要更多权利
